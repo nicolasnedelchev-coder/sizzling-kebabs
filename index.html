@@ -370,7 +370,7 @@
     .ph-garlic-sauce { background-image: url(images/dishes/garlic-sauce.jpg); }
     .ph-chilli-sauce { background-image: url(images/dishes/chilli-sauce.jpg); }
     .item { text-decoration: none; }
-    .item .thumb { display: block; background-color: #fff; background-size: cover; background-position: center; }
+    .item .thumb { display: block; object-fit: cover; background-color: #fff; }
     .zoom { display: none; position: fixed; inset: 0; z-index: 90; background: rgba(20, 10, 6, .85); align-items: center; justify-content: center; padding: 16px; }
     .zoom:target { display: flex; }
     .zoom-card {
@@ -486,7 +486,14 @@
     .order-error { color: #ffb4a0; font-size: .95rem; margin: 12px 0 0; }
     .order-send { width: 100%; min-height: 54px; margin-top: 14px; font-size: 1.05rem; }
     .order-fine { text-align: center; font-size: .85rem; color: var(--muted); margin: 12px 0 0; }
-    .order-fine a { color: #f0a27a; }  </style>
+    .order-fine a { color: #f0a27a; }    /* Order now buttons on the menu */
+    .item { display: flex; flex-direction: column; }
+    .item-open { display: block; color: inherit; text-decoration: none; }
+    .item-add {
+      margin: 0 12px 12px; min-height: 44px; border: 0; border-radius: 999px; cursor: pointer;
+      background: var(--terracotta); color: #fff; font: 600 .95rem "Jost", sans-serif;
+    }
+    .item-add:hover { background: var(--terracotta-dark); }  </style>
 </head>
 <body>
 <div class="bg-photo" aria-hidden="true"></div>
@@ -577,94 +584,94 @@
         <div class="cat-block" id="cat-kebabs" data-cat="kebabs" data-name="Kebabs">
           <h3>Kebabs<small>20 items</small></h3>
           <div class="grid">
-            <a class="item" href="#z-koobideh-kebab" data-name="Koobideh Kebab" data-cat="kebabs" data-search="koobideh kebab kebabs"><span class="thumb ph-koobideh-kebab" aria-hidden="true"></span><span class="name">Koobideh Kebab</span><span class="price">£12.00</span></a>
-            <a class="item" href="#z-chicken-shish" data-name="Chicken Shish" data-cat="kebabs" data-search="chicken shish kebabs"><span class="thumb ph-chicken-shish" aria-hidden="true"></span><span class="name">Chicken Shish</span><span class="price">£12.00</span></a>
-            <a class="item" href="#z-lamb-shish" data-name="Lamb Shish" data-cat="kebabs" data-search="lamb shish kebabs"><span class="thumb ph-lamb-shish" aria-hidden="true"></span><span class="name">Lamb Shish</span><span class="price">£15.00</span></a>
-            <a class="item" href="#z-double-shish" data-name="Double Shish" data-cat="kebabs" data-search="double shish kebabs"><span class="thumb ph-double-shish" aria-hidden="true"></span><span class="name">Double Shish</span><span class="price">£13.00</span></a>
-            <a class="item" href="#z-special-kebab" data-name="Special Kebab" data-cat="kebabs" data-search="special kebab kebabs"><span class="thumb ph-special-kebab" aria-hidden="true"></span><span class="name">Special Kebab</span><span class="price">£19.00</span></a>
-            <a class="item" href="#z-barg-kebab" data-name="Barg Kebab" data-cat="kebabs" data-search="barg kebab kebabs"><span class="thumb ph-barg-kebab" aria-hidden="true"></span><span class="name">Barg Kebab</span><span class="price">£16.00</span></a>
-            <a class="item" href="#z-soltani-kebab" data-name="Soltani Kebab" data-cat="kebabs" data-search="soltani kebab kebabs"><span class="thumb ph-soltani-kebab" aria-hidden="true"></span><span class="name">Soltani Kebab</span><span class="price">£16.00</span></a>
-            <a class="item" href="#z-barbecue-ribs" data-name="Barbecue Ribs" data-cat="kebabs" data-search="barbecue ribs kebabs"><span class="thumb ph-barbecue-ribs" aria-hidden="true"></span><span class="name">Barbecue Ribs</span><span class="price">£19.00</span></a>
-            <a class="item" href="#z-chicken-wings" data-name="Chicken Wings" data-cat="kebabs" data-search="chicken wings kebabs"><span class="thumb ph-chicken-wings" aria-hidden="true"></span><span class="name">Chicken Wings</span><span class="price">£9.00</span></a>
-            <a class="item" href="#z-charcoal-chicken" data-name="Charcoal Chicken" data-cat="kebabs" data-search="charcoal chicken kebabs"><span class="thumb ph-charcoal-chicken" aria-hidden="true"></span><span class="name">Charcoal Chicken</span><span class="price">£12.00</span></a>
-            <a class="item" href="#z-whole-chicken-kebab" data-name="Whole Chicken Kebab" data-cat="kebabs" data-search="whole chicken kebab kebabs"><span class="thumb ph-whole-chicken-kebab" aria-hidden="true"></span><span class="name">Whole Chicken Kebab</span><span class="price">£11.00</span></a>
-            <a class="item" href="#z-lamb-doner" data-name="Lamb Doner" data-cat="kebabs" data-search="lamb doner kebabs"><span class="thumb ph-lamb-doner" aria-hidden="true"></span><span class="name">Lamb Doner</span><span class="price">£9.00</span></a>
-            <a class="item" href="#z-chicken-doner" data-name="Chicken Doner" data-cat="kebabs" data-search="chicken doner kebabs"><span class="thumb ph-chicken-doner" aria-hidden="true"></span><span class="name">Chicken Doner</span><span class="price">£8.50</span></a>
-            <a class="item" href="#z-mixed-doner" data-name="Mixed Doner" data-cat="kebabs" data-search="mixed doner kebabs"><span class="thumb ph-mixed-doner" aria-hidden="true"></span><span class="name">Mixed Doner</span><span class="price">£9.00</span></a>
-                                                            <a class="item" href="#z-sea-bass" data-name="Sea Bass" data-cat="kebabs" data-search="sea bass kebabs"><span class="thumb ph-sea-bass" aria-hidden="true"></span><span class="name">Sea Bass</span><span class="price">£14.00</span></a>
-            <a class="item" href="#z-salmon" data-name="Salmon" data-cat="kebabs" data-search="salmon kebabs"><span class="thumb ph-salmon" aria-hidden="true"></span><span class="name">Salmon</span><span class="price">£15.00</span></a>
-            <a class="item" href="#z-sea-bream" data-name="Sea Bream" data-cat="kebabs" data-search="sea bream kebabs"><span class="thumb ph-sea-bream" aria-hidden="true"></span><span class="name">Sea Bream</span><span class="price">£14.00</span></a>
-            <a class="item" href="#z-prawns" data-name="Prawns" data-cat="kebabs" data-search="prawns kebabs"><span class="thumb ph-prawns" aria-hidden="true"></span><span class="name">Prawns</span><span class="price">£14.00</span></a>
-            <a class="item" href="#z-tashreeb" data-name="Tashreeb" data-cat="kebabs" data-search="tashreeb kebabs"><span class="thumb ph-tashreeb" aria-hidden="true"></span><span class="name">Tashreeb</span><span class="price">£14.00</span></a>
-            <a class="item" href="#z-kabuli-pulao" data-name="Kabuli Pulao" data-cat="kebabs" data-search="kabuli pulao kebabs"><span class="thumb ph-kabuli-pulao" aria-hidden="true"></span><span class="name">Kabuli Pulao</span><span class="price">£13.00</span></a>
+            <div class="item" data-name="Koobideh Kebab" data-cat="kebabs" data-search="koobideh kebab kebabs"><a class="item-open" href="#z-koobideh-kebab"><img class="thumb" src="images/dishes/koobideh-kebab.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Koobideh Kebab</span><span class="price">£12.00</span></a><button class="item-add" type="button" data-add="Koobideh Kebab" data-price="12.00">Order now</button></div>
+            <div class="item" data-name="Chicken Shish" data-cat="kebabs" data-search="chicken shish kebabs"><a class="item-open" href="#z-chicken-shish"><img class="thumb" src="images/dishes/chicken-shish.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Chicken Shish</span><span class="price">£12.00</span></a><button class="item-add" type="button" data-add="Chicken Shish" data-price="12.00">Order now</button></div>
+            <div class="item" data-name="Lamb Shish" data-cat="kebabs" data-search="lamb shish kebabs"><a class="item-open" href="#z-lamb-shish"><img class="thumb" src="images/dishes/lamb-shish.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Lamb Shish</span><span class="price">£15.00</span></a><button class="item-add" type="button" data-add="Lamb Shish" data-price="15.00">Order now</button></div>
+            <div class="item" data-name="Double Shish" data-cat="kebabs" data-search="double shish kebabs"><a class="item-open" href="#z-double-shish"><img class="thumb" src="images/dishes/double-shish.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Double Shish</span><span class="price">£13.00</span></a><button class="item-add" type="button" data-add="Double Shish" data-price="13.00">Order now</button></div>
+            <div class="item" data-name="Special Kebab" data-cat="kebabs" data-search="special kebab kebabs"><a class="item-open" href="#z-special-kebab"><img class="thumb" src="images/dishes/special-kebab.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Special Kebab</span><span class="price">£19.00</span></a><button class="item-add" type="button" data-add="Special Kebab" data-price="19.00">Order now</button></div>
+            <div class="item" data-name="Barg Kebab" data-cat="kebabs" data-search="barg kebab kebabs"><a class="item-open" href="#z-barg-kebab"><img class="thumb" src="images/dishes/barg-kebab.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Barg Kebab</span><span class="price">£16.00</span></a><button class="item-add" type="button" data-add="Barg Kebab" data-price="16.00">Order now</button></div>
+            <div class="item" data-name="Soltani Kebab" data-cat="kebabs" data-search="soltani kebab kebabs"><a class="item-open" href="#z-soltani-kebab"><img class="thumb" src="images/dishes/soltani-kebab.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Soltani Kebab</span><span class="price">£16.00</span></a><button class="item-add" type="button" data-add="Soltani Kebab" data-price="16.00">Order now</button></div>
+            <div class="item" data-name="Barbecue Ribs" data-cat="kebabs" data-search="barbecue ribs kebabs"><a class="item-open" href="#z-barbecue-ribs"><img class="thumb" src="images/dishes/barbecue-ribs.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Barbecue Ribs</span><span class="price">£19.00</span></a><button class="item-add" type="button" data-add="Barbecue Ribs" data-price="19.00">Order now</button></div>
+            <div class="item" data-name="Chicken Wings" data-cat="kebabs" data-search="chicken wings kebabs"><a class="item-open" href="#z-chicken-wings"><img class="thumb" src="images/dishes/chicken-wings.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Chicken Wings</span><span class="price">£9.00</span></a><button class="item-add" type="button" data-add="Chicken Wings" data-price="9.00">Order now</button></div>
+            <div class="item" data-name="Charcoal Chicken" data-cat="kebabs" data-search="charcoal chicken kebabs"><a class="item-open" href="#z-charcoal-chicken"><img class="thumb" src="images/dishes/charcoal-chicken.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Charcoal Chicken</span><span class="price">£12.00</span></a><button class="item-add" type="button" data-add="Charcoal Chicken" data-price="12.00">Order now</button></div>
+            <div class="item" data-name="Whole Chicken Kebab" data-cat="kebabs" data-search="whole chicken kebab kebabs"><a class="item-open" href="#z-whole-chicken-kebab"><img class="thumb" src="images/dishes/whole-chicken-kebab.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Whole Chicken Kebab</span><span class="price">£11.00</span></a><button class="item-add" type="button" data-add="Whole Chicken Kebab" data-price="11.00">Order now</button></div>
+            <div class="item" data-name="Lamb Doner" data-cat="kebabs" data-search="lamb doner kebabs"><a class="item-open" href="#z-lamb-doner"><img class="thumb" src="images/dishes/lamb-doner.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Lamb Doner</span><span class="price">£9.00</span></a><button class="item-add" type="button" data-add="Lamb Doner" data-price="9.00">Order now</button></div>
+            <div class="item" data-name="Chicken Doner" data-cat="kebabs" data-search="chicken doner kebabs"><a class="item-open" href="#z-chicken-doner"><img class="thumb" src="images/dishes/chicken-doner.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Chicken Doner</span><span class="price">£8.50</span></a><button class="item-add" type="button" data-add="Chicken Doner" data-price="8.50">Order now</button></div>
+            <div class="item" data-name="Mixed Doner" data-cat="kebabs" data-search="mixed doner kebabs"><a class="item-open" href="#z-mixed-doner"><img class="thumb" src="images/dishes/mixed-doner.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Mixed Doner</span><span class="price">£9.00</span></a><button class="item-add" type="button" data-add="Mixed Doner" data-price="9.00">Order now</button></div>
+                                                            <div class="item" data-name="Sea Bass" data-cat="kebabs" data-search="sea bass kebabs"><a class="item-open" href="#z-sea-bass"><img class="thumb" src="images/dishes/sea-bass.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Sea Bass</span><span class="price">£14.00</span></a><button class="item-add" type="button" data-add="Sea Bass" data-price="14.00">Order now</button></div>
+            <div class="item" data-name="Salmon" data-cat="kebabs" data-search="salmon kebabs"><a class="item-open" href="#z-salmon"><img class="thumb" src="images/dishes/salmon.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Salmon</span><span class="price">£15.00</span></a><button class="item-add" type="button" data-add="Salmon" data-price="15.00">Order now</button></div>
+            <div class="item" data-name="Sea Bream" data-cat="kebabs" data-search="sea bream kebabs"><a class="item-open" href="#z-sea-bream"><img class="thumb" src="images/dishes/sea-bream.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Sea Bream</span><span class="price">£14.00</span></a><button class="item-add" type="button" data-add="Sea Bream" data-price="14.00">Order now</button></div>
+            <div class="item" data-name="Prawns" data-cat="kebabs" data-search="prawns kebabs"><a class="item-open" href="#z-prawns"><img class="thumb" src="images/dishes/prawns.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Prawns</span><span class="price">£14.00</span></a><button class="item-add" type="button" data-add="Prawns" data-price="14.00">Order now</button></div>
+            <div class="item" data-name="Tashreeb" data-cat="kebabs" data-search="tashreeb kebabs"><a class="item-open" href="#z-tashreeb"><img class="thumb" src="images/dishes/tashreeb.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Tashreeb</span><span class="price">£14.00</span></a><button class="item-add" type="button" data-add="Tashreeb" data-price="14.00">Order now</button></div>
+            <div class="item" data-name="Kabuli Pulao" data-cat="kebabs" data-search="kabuli pulao kebabs"><a class="item-open" href="#z-kabuli-pulao"><img class="thumb" src="images/dishes/kabuli-pulao.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Kabuli Pulao</span><span class="price">£13.00</span></a><button class="item-add" type="button" data-add="Kabuli Pulao" data-price="13.00">Order now</button></div>
           </div>
         </div>
         <div class="cat-block" id="cat-sides" data-cat="sides" data-name="Side Orders">
           <h3>Side Orders<small>12 items</small></h3>
           <div class="grid">
-            <a class="item" href="#z-fries" data-name="Fries" data-cat="sides" data-search="fries side orders"><span class="thumb ph-fries" aria-hidden="true"></span><span class="name">Fries</span><span class="price">£2.50</span></a>
-            <a class="item" href="#z-tacco-chips" data-name="Tacco Chips" data-cat="sides" data-search="tacco chips side orders"><span class="thumb ph-tacco-chips" aria-hidden="true"></span><span class="name">Tacco Chips</span><span class="price">£4.00</span></a>
-            <a class="item" href="#z-taco-cheese-chips" data-name="Taco Cheese Chips" data-cat="sides" data-search="taco cheese chips side orders"><span class="thumb ph-taco-cheese-chips" aria-hidden="true"></span><span class="name">Taco Cheese Chips</span><span class="price">£5.00</span></a>
-            <a class="item" href="#z-cheese-chips" data-name="Cheese Chips" data-cat="sides" data-search="cheese chips side orders"><span class="thumb ph-cheese-chips" aria-hidden="true"></span><span class="name">Cheese Chips</span><span class="price">£4.00</span></a>
-            <a class="item" href="#z-garlic-cheese-chips" data-name="Garlic Cheese Chips" data-cat="sides" data-search="garlic cheese chips side orders"><span class="thumb ph-garlic-cheese-chips" aria-hidden="true"></span><span class="name">Garlic Cheese Chips</span><span class="price">£5.00</span></a>
-            <a class="item" href="#z-curry-chips" data-name="Curry Chips" data-cat="sides" data-search="curry chips side orders"><span class="thumb ph-curry-chips" aria-hidden="true"></span><span class="name">Curry Chips</span><span class="price">£3.50</span></a>
-            <a class="item" href="#z-curry-cheese-chips" data-name="Curry Cheese Chips" data-cat="sides" data-search="curry cheese chips side orders"><span class="thumb ph-curry-cheese-chips" aria-hidden="true"></span><span class="name">Curry Cheese Chips</span><span class="price">£3.50</span></a>
-            <a class="item" href="#z-halloumi-cheese-salad" data-name="Halloumi Cheese Salad" data-cat="sides" data-search="halloumi cheese salad side orders"><span class="thumb ph-halloumi-cheese-salad" aria-hidden="true"></span><span class="name">Halloumi Cheese Salad</span><span class="price">£6.00</span></a>
-            <a class="item" href="#z-hummus" data-name="Hummus" data-cat="sides" data-search="hummus side orders"><span class="thumb ph-hummus" aria-hidden="true"></span><span class="name">Hummus</span><span class="price">£2.00</span></a>
-            <a class="item" href="#z-tzatziki" data-name="Tzatziki" data-cat="sides" data-search="tzatziki side orders"><span class="thumb ph-tzatziki" aria-hidden="true"></span><span class="name">Tzatziki</span><span class="price">£2.00</span></a>
-            <a class="item" href="#z-shirazi-salad" data-name="Shirazi Salad" data-cat="sides" data-search="shirazi salad side orders"><span class="thumb ph-shirazi-salad" aria-hidden="true"></span><span class="name">Shirazi Salad</span><span class="price">£2.50</span></a>
-            <a class="item" href="#z-mousir" data-name="Mousir" data-cat="sides" data-search="mousir side orders"><span class="thumb ph-mousir" aria-hidden="true"></span><span class="name">Mousir</span><span class="price">£2.50</span></a>
+            <div class="item" data-name="Fries" data-cat="sides" data-search="fries side orders"><a class="item-open" href="#z-fries"><img class="thumb" src="images/dishes/fries.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Fries</span><span class="price">£2.50</span></a><button class="item-add" type="button" data-add="Fries" data-price="2.50">Order now</button></div>
+            <div class="item" data-name="Tacco Chips" data-cat="sides" data-search="tacco chips side orders"><a class="item-open" href="#z-tacco-chips"><img class="thumb" src="images/dishes/tacco-chips.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Tacco Chips</span><span class="price">£4.00</span></a><button class="item-add" type="button" data-add="Tacco Chips" data-price="4.00">Order now</button></div>
+            <div class="item" data-name="Taco Cheese Chips" data-cat="sides" data-search="taco cheese chips side orders"><a class="item-open" href="#z-taco-cheese-chips"><img class="thumb" src="images/dishes/taco-cheese-chips.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Taco Cheese Chips</span><span class="price">£5.00</span></a><button class="item-add" type="button" data-add="Taco Cheese Chips" data-price="5.00">Order now</button></div>
+            <div class="item" data-name="Cheese Chips" data-cat="sides" data-search="cheese chips side orders"><a class="item-open" href="#z-cheese-chips"><img class="thumb" src="images/dishes/cheese-chips.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Cheese Chips</span><span class="price">£4.00</span></a><button class="item-add" type="button" data-add="Cheese Chips" data-price="4.00">Order now</button></div>
+            <div class="item" data-name="Garlic Cheese Chips" data-cat="sides" data-search="garlic cheese chips side orders"><a class="item-open" href="#z-garlic-cheese-chips"><img class="thumb" src="images/dishes/garlic-cheese-chips.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Garlic Cheese Chips</span><span class="price">£5.00</span></a><button class="item-add" type="button" data-add="Garlic Cheese Chips" data-price="5.00">Order now</button></div>
+            <div class="item" data-name="Curry Chips" data-cat="sides" data-search="curry chips side orders"><a class="item-open" href="#z-curry-chips"><img class="thumb" src="images/dishes/curry-chips.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Curry Chips</span><span class="price">£3.50</span></a><button class="item-add" type="button" data-add="Curry Chips" data-price="3.50">Order now</button></div>
+            <div class="item" data-name="Curry Cheese Chips" data-cat="sides" data-search="curry cheese chips side orders"><a class="item-open" href="#z-curry-cheese-chips"><img class="thumb" src="images/dishes/curry-cheese-chips.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Curry Cheese Chips</span><span class="price">£3.50</span></a><button class="item-add" type="button" data-add="Curry Cheese Chips" data-price="3.50">Order now</button></div>
+            <div class="item" data-name="Halloumi Cheese Salad" data-cat="sides" data-search="halloumi cheese salad side orders"><a class="item-open" href="#z-halloumi-cheese-salad"><img class="thumb" src="images/dishes/halloumi-cheese-salad.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Halloumi Cheese Salad</span><span class="price">£6.00</span></a><button class="item-add" type="button" data-add="Halloumi Cheese Salad" data-price="6.00">Order now</button></div>
+            <div class="item" data-name="Hummus" data-cat="sides" data-search="hummus side orders"><a class="item-open" href="#z-hummus"><img class="thumb" src="images/dishes/hummus.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Hummus</span><span class="price">£2.00</span></a><button class="item-add" type="button" data-add="Hummus" data-price="2.00">Order now</button></div>
+            <div class="item" data-name="Tzatziki" data-cat="sides" data-search="tzatziki side orders"><a class="item-open" href="#z-tzatziki"><img class="thumb" src="images/dishes/tzatziki.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Tzatziki</span><span class="price">£2.00</span></a><button class="item-add" type="button" data-add="Tzatziki" data-price="2.00">Order now</button></div>
+            <div class="item" data-name="Shirazi Salad" data-cat="sides" data-search="shirazi salad side orders"><a class="item-open" href="#z-shirazi-salad"><img class="thumb" src="images/dishes/shirazi-salad.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Shirazi Salad</span><span class="price">£2.50</span></a><button class="item-add" type="button" data-add="Shirazi Salad" data-price="2.50">Order now</button></div>
+            <div class="item" data-name="Mousir" data-cat="sides" data-search="mousir side orders"><a class="item-open" href="#z-mousir"><img class="thumb" src="images/dishes/mousir.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Mousir</span><span class="price">£2.50</span></a><button class="item-add" type="button" data-add="Mousir" data-price="2.50">Order now</button></div>
           </div>
         </div>
         <div class="cat-block" id="cat-burgers" data-cat="burgers" data-name="Burgers">
           <h3>Burgers<small>5 items</small></h3>
           <div class="grid">
-            <a class="item" href="#z-single-beef-burger" data-name="Single Beef Burger" data-cat="burgers" data-search="single beef burger burgers"><span class="thumb ph-single-beef-burger" aria-hidden="true"></span><span class="name">Single Beef Burger</span><span class="price">£4.50</span></a>
-            <a class="item" href="#z-double-beef-burger" data-name="Double Beef Burger" data-cat="burgers" data-search="double beef burger burgers"><span class="thumb ph-double-beef-burger" aria-hidden="true"></span><span class="name">Double Beef Burger</span><span class="price">£6.00</span></a>
-            <a class="item" href="#z-special-beef-burger" data-name="Special Beef Burger" data-cat="burgers" data-search="special beef burger burgers"><span class="thumb ph-special-beef-burger" aria-hidden="true"></span><span class="name">Special Beef Burger</span><span class="price">£8.50</span></a>
-            <a class="item" href="#z-chicken-fillet-burger" data-name="Chicken Fillet Burger" data-cat="burgers" data-search="chicken fillet burger burgers"><span class="thumb ph-chicken-fillet-burger" aria-hidden="true"></span><span class="name">Chicken Fillet Burger</span><span class="price">£4.50</span></a>
-            <a class="item" href="#z-fish-burger" data-name="Fish Burger" data-cat="burgers" data-search="fish burger burgers"><span class="thumb ph-fish-burger" aria-hidden="true"></span><span class="name">Fish Burger</span><span class="price">£4.50</span></a>
+            <div class="item" data-name="Single Beef Burger" data-cat="burgers" data-search="single beef burger burgers"><a class="item-open" href="#z-single-beef-burger"><img class="thumb" src="images/dishes/single-beef-burger.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Single Beef Burger</span><span class="price">£4.50</span></a><button class="item-add" type="button" data-add="Single Beef Burger" data-price="4.50">Order now</button></div>
+            <div class="item" data-name="Double Beef Burger" data-cat="burgers" data-search="double beef burger burgers"><a class="item-open" href="#z-double-beef-burger"><img class="thumb" src="images/dishes/double-beef-burger.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Double Beef Burger</span><span class="price">£6.00</span></a><button class="item-add" type="button" data-add="Double Beef Burger" data-price="6.00">Order now</button></div>
+            <div class="item" data-name="Special Beef Burger" data-cat="burgers" data-search="special beef burger burgers"><a class="item-open" href="#z-special-beef-burger"><img class="thumb" src="images/dishes/special-beef-burger.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Special Beef Burger</span><span class="price">£8.50</span></a><button class="item-add" type="button" data-add="Special Beef Burger" data-price="8.50">Order now</button></div>
+            <div class="item" data-name="Chicken Fillet Burger" data-cat="burgers" data-search="chicken fillet burger burgers"><a class="item-open" href="#z-chicken-fillet-burger"><img class="thumb" src="images/dishes/chicken-fillet-burger.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Chicken Fillet Burger</span><span class="price">£4.50</span></a><button class="item-add" type="button" data-add="Chicken Fillet Burger" data-price="4.50">Order now</button></div>
+            <div class="item" data-name="Fish Burger" data-cat="burgers" data-search="fish burger burgers"><a class="item-open" href="#z-fish-burger"><img class="thumb" src="images/dishes/fish-burger.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Fish Burger</span><span class="price">£4.50</span></a><button class="item-add" type="button" data-add="Fish Burger" data-price="4.50">Order now</button></div>
           </div>
         </div>
         <div class="cat-block" id="cat-kids" data-cat="kids" data-name="Kids' Meals">
           <h3>Kids' Meals<small>5 items</small></h3>
           <div class="grid">
-            <a class="item" href="#z-chicken-doner-burger" data-name="Chicken Doner Burger" data-cat="kids" data-search="chicken doner burger kids' meals"><span class="thumb ph-chicken-doner-burger" aria-hidden="true"></span><span class="name">Chicken Doner Burger</span><span class="price">£7.50</span></a>
-            <a class="item" href="#z-lamb-doner-burger" data-name="Lamb Doner Burger" data-cat="kids" data-search="lamb doner burger kids' meals"><span class="thumb ph-lamb-doner-burger" aria-hidden="true"></span><span class="name">Lamb Doner Burger</span><span class="price">£8.00</span></a>
-            <a class="item" href="#z-mixed-doner-burger" data-name="Mixed Doner Burger" data-cat="kids" data-search="mixed doner burger kids' meals"><span class="thumb ph-mixed-doner-burger" aria-hidden="true"></span><span class="name">Mixed Doner Burger</span><span class="price">£8.00</span></a>
-            <a class="item" href="#z-chicken-tenders" data-name="Chicken Tenders" data-cat="kids" data-search="chicken tenders kids' meals"><span class="thumb ph-chicken-tenders" aria-hidden="true"></span><span class="name">Chicken Tenders</span><span class="price">£7.50</span></a>
-            <a class="item" href="#z-chicken-nuggets" data-name="Chicken Nuggets" data-cat="kids" data-search="chicken nuggets kids' meals"><span class="thumb ph-chicken-nuggets" aria-hidden="true"></span><span class="name">Chicken Nuggets</span><span class="price">£7.50</span></a>
+            <div class="item" data-name="Chicken Doner Burger" data-cat="kids" data-search="chicken doner burger kids' meals"><a class="item-open" href="#z-chicken-doner-burger"><img class="thumb" src="images/dishes/chicken-doner-burger.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Chicken Doner Burger</span><span class="price">£7.50</span></a><button class="item-add" type="button" data-add="Chicken Doner Burger" data-price="7.50">Order now</button></div>
+            <div class="item" data-name="Lamb Doner Burger" data-cat="kids" data-search="lamb doner burger kids' meals"><a class="item-open" href="#z-lamb-doner-burger"><img class="thumb" src="images/dishes/lamb-doner-burger.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Lamb Doner Burger</span><span class="price">£8.00</span></a><button class="item-add" type="button" data-add="Lamb Doner Burger" data-price="8.00">Order now</button></div>
+            <div class="item" data-name="Mixed Doner Burger" data-cat="kids" data-search="mixed doner burger kids' meals"><a class="item-open" href="#z-mixed-doner-burger"><img class="thumb" src="images/dishes/mixed-doner-burger.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Mixed Doner Burger</span><span class="price">£8.00</span></a><button class="item-add" type="button" data-add="Mixed Doner Burger" data-price="8.00">Order now</button></div>
+            <div class="item" data-name="Chicken Tenders" data-cat="kids" data-search="chicken tenders kids' meals"><a class="item-open" href="#z-chicken-tenders"><img class="thumb" src="images/dishes/chicken-tenders.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Chicken Tenders</span><span class="price">£7.50</span></a><button class="item-add" type="button" data-add="Chicken Tenders" data-price="7.50">Order now</button></div>
+            <div class="item" data-name="Chicken Nuggets" data-cat="kids" data-search="chicken nuggets kids' meals"><a class="item-open" href="#z-chicken-nuggets"><img class="thumb" src="images/dishes/chicken-nuggets.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Chicken Nuggets</span><span class="price">£7.50</span></a><button class="item-add" type="button" data-add="Chicken Nuggets" data-price="7.50">Order now</button></div>
           </div>
         </div>
         <div class="cat-block" id="cat-also" data-cat="also" data-name="Also on the Menu">
           <h3>Also on the Menu<small>6 items</small></h3>
           <div class="grid">
-            <a class="item" href="#z-ghoozi" data-name="Ghoozi" data-cat="also" data-search="ghoozi also on the menu"><span class="thumb ph-ghoozi" aria-hidden="true"></span><span class="name">Ghoozi</span><span class="price">£15.00</span></a>
-            <a class="item" href="#z-zereshk-polo-with-chicken" data-name="Zereshk Polo with Chicken" data-cat="also" data-search="zereshk polo with chicken also on the menu"><span class="thumb ph-zereshk-polo-with-chicken" aria-hidden="true"></span><span class="name">Zereshk Polo with Chicken</span><span class="price">£11.00</span></a>
-            <a class="item" href="#z-ghormeh-sabzi" data-name="Ghormeh Sabzi" data-cat="also" data-search="ghormeh sabzi also on the menu"><span class="thumb ph-ghormeh-sabzi" aria-hidden="true"></span><span class="name">Ghormeh Sabzi</span><span class="price">£11.00</span></a>
-            <a class="item" href="#z-fresh-falafel" data-name="Fresh Falafel" data-cat="also" data-search="fresh falafel also on the menu"><span class="thumb ph-fresh-falafel" aria-hidden="true"></span><span class="name">Fresh Falafel</span><span class="price">£7.00</span></a>
-            <a class="item" href="#z-lahmacun" data-name="Lahmacun" data-cat="also" data-search="lahmacun also on the menu"><span class="thumb ph-lahmacun" aria-hidden="true"></span><span class="name">Lahmacun</span><span class="price">£9.00</span></a>
-            <a class="item" href="#z-kumpir-potato" data-name="Kumpir Potato" data-cat="also" data-search="kumpir potato also on the menu"><span class="thumb ph-kumpir-potato" aria-hidden="true"></span><span class="name">Kumpir Potato</span><span class="price">£10.00</span></a>
+            <div class="item" data-name="Ghoozi" data-cat="also" data-search="ghoozi also on the menu"><a class="item-open" href="#z-ghoozi"><img class="thumb" src="images/dishes/ghoozi.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Ghoozi</span><span class="price">£15.00</span></a><button class="item-add" type="button" data-add="Ghoozi" data-price="15.00">Order now</button></div>
+            <div class="item" data-name="Zereshk Polo with Chicken" data-cat="also" data-search="zereshk polo with chicken also on the menu"><a class="item-open" href="#z-zereshk-polo-with-chicken"><img class="thumb" src="images/dishes/zereshk-polo-with-chicken.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Zereshk Polo with Chicken</span><span class="price">£11.00</span></a><button class="item-add" type="button" data-add="Zereshk Polo with Chicken" data-price="11.00">Order now</button></div>
+            <div class="item" data-name="Ghormeh Sabzi" data-cat="also" data-search="ghormeh sabzi also on the menu"><a class="item-open" href="#z-ghormeh-sabzi"><img class="thumb" src="images/dishes/ghormeh-sabzi.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Ghormeh Sabzi</span><span class="price">£11.00</span></a><button class="item-add" type="button" data-add="Ghormeh Sabzi" data-price="11.00">Order now</button></div>
+            <div class="item" data-name="Fresh Falafel" data-cat="also" data-search="fresh falafel also on the menu"><a class="item-open" href="#z-fresh-falafel"><img class="thumb" src="images/dishes/fresh-falafel.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Fresh Falafel</span><span class="price">£7.00</span></a><button class="item-add" type="button" data-add="Fresh Falafel" data-price="7.00">Order now</button></div>
+            <div class="item" data-name="Lahmacun" data-cat="also" data-search="lahmacun also on the menu"><a class="item-open" href="#z-lahmacun"><img class="thumb" src="images/dishes/lahmacun.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Lahmacun</span><span class="price">£9.00</span></a><button class="item-add" type="button" data-add="Lahmacun" data-price="9.00">Order now</button></div>
+            <div class="item" data-name="Kumpir Potato" data-cat="also" data-search="kumpir potato also on the menu"><a class="item-open" href="#z-kumpir-potato"><img class="thumb" src="images/dishes/kumpir-potato.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Kumpir Potato</span><span class="price">£10.00</span></a><button class="item-add" type="button" data-add="Kumpir Potato" data-price="10.00">Order now</button></div>
           </div>
         </div>
         <div class="cat-block" id="cat-drinks" data-cat="drinks" data-name="Drinks">
           <h3>Drinks<small>8 items</small></h3>
           <div class="grid">
-            <a class="item" href="#z-coca-cola" data-name="Coca-Cola" data-cat="drinks" data-search="coca-cola drinks"><span class="thumb ph-coca-cola" aria-hidden="true"></span><span class="name">Coca-Cola</span><span class="price">£1.50</span></a>
-            <a class="item" href="#z-coca-cola-zero" data-name="Coca-Cola Zero" data-cat="drinks" data-search="coca-cola zero drinks"><span class="thumb ph-coca-cola-zero" aria-hidden="true"></span><span class="name">Coca-Cola Zero</span><span class="price">£1.50</span></a>
-            <a class="item" href="#z-fanta" data-name="Fanta" data-cat="drinks" data-search="fanta drinks"><span class="thumb ph-fanta" aria-hidden="true"></span><span class="name">Fanta</span><span class="price">£1.50</span></a>
-            <a class="item" href="#z-water" data-name="Water" data-cat="drinks" data-search="water drinks"><span class="thumb ph-water" aria-hidden="true"></span><span class="name">Water</span><span class="price">£1.50</span></a>
-            <a class="item" href="#z-ayran" data-name="Ayran" data-cat="drinks" data-search="ayran drinks"><span class="thumb ph-ayran" aria-hidden="true"></span><span class="name">Ayran</span><span class="price">£1.50</span></a>
-            <a class="item" href="#z-7up" data-name="7UP" data-cat="drinks" data-search="7up drinks"><span class="thumb ph-7up" aria-hidden="true"></span><span class="name">7UP</span><span class="price">£1.50</span></a>
-            <a class="item" href="#z-sprite" data-name="Sprite" data-cat="drinks" data-search="sprite drinks"><span class="thumb ph-sprite" aria-hidden="true"></span><span class="name">Sprite</span><span class="price">£1.50</span></a>
-            <a class="item" href="#z-capri-sun" data-name="Capri-Sun" data-cat="drinks" data-search="capri-sun drinks"><span class="thumb ph-capri-sun" aria-hidden="true"></span><span class="name">Capri-Sun</span><span class="price">£1.00</span></a>
+            <div class="item" data-name="Coca-Cola" data-cat="drinks" data-search="coca-cola drinks"><a class="item-open" href="#z-coca-cola"><img class="thumb" src="images/dishes/coca-cola.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Coca-Cola</span><span class="price">£1.50</span></a><button class="item-add" type="button" data-add="Coca-Cola" data-price="1.50">Order now</button></div>
+            <div class="item" data-name="Coca-Cola Zero" data-cat="drinks" data-search="coca-cola zero drinks"><a class="item-open" href="#z-coca-cola-zero"><img class="thumb" src="images/dishes/coca-cola-zero.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Coca-Cola Zero</span><span class="price">£1.50</span></a><button class="item-add" type="button" data-add="Coca-Cola Zero" data-price="1.50">Order now</button></div>
+            <div class="item" data-name="Fanta" data-cat="drinks" data-search="fanta drinks"><a class="item-open" href="#z-fanta"><img class="thumb" src="images/dishes/fanta.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Fanta</span><span class="price">£1.50</span></a><button class="item-add" type="button" data-add="Fanta" data-price="1.50">Order now</button></div>
+            <div class="item" data-name="Water" data-cat="drinks" data-search="water drinks"><a class="item-open" href="#z-water"><img class="thumb" src="images/dishes/water.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Water</span><span class="price">£1.50</span></a><button class="item-add" type="button" data-add="Water" data-price="1.50">Order now</button></div>
+            <div class="item" data-name="Ayran" data-cat="drinks" data-search="ayran drinks"><a class="item-open" href="#z-ayran"><img class="thumb" src="images/dishes/ayran.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Ayran</span><span class="price">£1.50</span></a><button class="item-add" type="button" data-add="Ayran" data-price="1.50">Order now</button></div>
+            <div class="item" data-name="7UP" data-cat="drinks" data-search="7up drinks"><a class="item-open" href="#z-7up"><img class="thumb" src="images/dishes/7up.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">7UP</span><span class="price">£1.50</span></a><button class="item-add" type="button" data-add="7UP" data-price="1.50">Order now</button></div>
+            <div class="item" data-name="Sprite" data-cat="drinks" data-search="sprite drinks"><a class="item-open" href="#z-sprite"><img class="thumb" src="images/dishes/sprite.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Sprite</span><span class="price">£1.50</span></a><button class="item-add" type="button" data-add="Sprite" data-price="1.50">Order now</button></div>
+            <div class="item" data-name="Capri-Sun" data-cat="drinks" data-search="capri-sun drinks"><a class="item-open" href="#z-capri-sun"><img class="thumb" src="images/dishes/capri-sun.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Capri-Sun</span><span class="price">£1.00</span></a><button class="item-add" type="button" data-add="Capri-Sun" data-price="1.00">Order now</button></div>
           </div>
         </div>
         <div class="cat-block" id="cat-sauces" data-cat="sauces" data-name="Sauces">
           <h3>Sauces<small>2 items</small></h3>
           <div class="grid">
-            <a class="item" href="#z-garlic-sauce" data-name="Garlic Sauce" data-cat="sauces" data-search="garlic sauce sauces"><span class="thumb ph-garlic-sauce" aria-hidden="true"></span><span class="name">Garlic Sauce</span><span class="price">£0.00</span></a>
-            <a class="item" href="#z-chilli-sauce" data-name="Chilli Sauce" data-cat="sauces" data-search="chilli sauce sauces"><span class="thumb ph-chilli-sauce" aria-hidden="true"></span><span class="name">Chilli Sauce</span><span class="price">£0.00</span></a>
+            <div class="item" data-name="Garlic Sauce" data-cat="sauces" data-search="garlic sauce sauces"><a class="item-open" href="#z-garlic-sauce"><img class="thumb" src="images/dishes/garlic-sauce.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Garlic Sauce</span><span class="price">£0.00</span></a><button class="item-add" type="button" data-add="Garlic Sauce" data-price="0.00">Order now</button></div>
+            <div class="item" data-name="Chilli Sauce" data-cat="sauces" data-search="chilli sauce sauces"><a class="item-open" href="#z-chilli-sauce"><img class="thumb" src="images/dishes/chilli-sauce.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Chilli Sauce</span><span class="price">£0.00</span></a><button class="item-add" type="button" data-add="Chilli Sauce" data-price="0.00">Order now</button></div>
           </div>
         </div>
       </div>
@@ -740,7 +747,7 @@
 <!-- Lightbox for the printed menu -->
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Printed menu">
   <button id="closeLb" aria-label="Close">×</button>
-  <img src="images/full-menu.jpg" alt="Printed menu of Sizzling Kebabs Restaurant with kebabs, side orders, burgers, kids' meals, drinks and sauces">
+  <img loading="lazy" src="images/full-menu.jpg" alt="Printed menu of Sizzling Kebabs Restaurant with kebabs, side orders, burgers, kids' meals, drinks and sauces">
 </div>
 
 <div class="zoom" id="z-koobideh-kebab" role="dialog" aria-modal="true" aria-label="Koobideh Kebab">
@@ -2002,8 +2009,7 @@
     </div>
     <p class="order-error" id="orderError" role="alert" hidden></p>
     <button class="btn btn-primary order-send" id="orderPay" type="button">Pay by card</button>
-    <button class="btn btn-outline order-send" id="orderSend" type="button">Send order on WhatsApp instead</button>
-    <p class="order-fine">Pay by card now, or pay when you collect or on delivery. Prefer to call? <a href="tel:+441183531999">0118 353 1999</a></p>
+    <p class="order-fine">Payment is taken securely by card. Prefer to call? <a href="tel:+441183531999">0118 353 1999</a></p>
   </div>
 </div>
 <a class="to-top" id="toTop" href="#top" aria-label="Back to top">↑</a>
@@ -2074,8 +2080,7 @@
     if (e.key === "ArrowLeft") stepDish("prev");
     if (e.key === "ArrowRight") stepDish("next");
   });
-  // ---- Order: a basket that sends the order to the restaurant on WhatsApp ----
-  const WHATSAPP_NUMBER = "447551559009";
+  // ---- Order basket ----
   const cart = [];
   const orderBar = document.getElementById("orderBar");
   const orderPanel = document.getElementById("orderPanel");
@@ -2120,7 +2125,7 @@
     if (!btn) return;
     addToCart(btn.dataset.add, Number(btn.dataset.price));
     const label = btn.textContent;
-    btn.textContent = "Added to your order";
+    btn.textContent = btn.classList.contains("item-add") ? "Added ✓" : "Added to your order";
     setTimeout(() => { btn.textContent = label; }, 1200);
   });
 
@@ -2150,32 +2155,6 @@
   document.getElementById("orderClose").addEventListener("click", closeOrder);
   orderPanel.addEventListener("click", e => { if (e.target === orderPanel) closeOrder(); });
 
-  document.getElementById("orderSend").addEventListener("click", () => {
-    const data = new FormData(orderForm);
-    const name = String(data.get("name") || "").trim();
-    const phone = String(data.get("phone") || "").trim();
-    const address = String(data.get("address") || "").trim();
-    const postcode = String(data.get("postcode") || "").trim();
-    const notes = String(data.get("notes") || "").trim();
-    const type = orderType();
-    let problem = "";
-    if (cart.length === 0) problem = "Add at least one dish first.";
-    else if (!name || !phone) problem = "Please add your name and phone number.";
-    else if (type === "delivery" && (!address || !postcode)) problem = "Please add your address and postcode for delivery.";
-    orderError.textContent = problem;
-    orderError.hidden = !problem;
-    if (problem) return;
-
-    const lines = [type === "delivery" ? "NEW DELIVERY ORDER" : "NEW PICK-UP ORDER", ""];
-    cart.forEach(l => lines.push(l.qty + " x " + l.name + " - " + money(l.price * l.qty)));
-    lines.push("", "Subtotal: " + money(cartTotal()));
-    if (type === "delivery") lines.push("Delivery charge: to be confirmed");
-    lines.push("", "Name: " + name, "Phone: " + phone);
-    if (type === "delivery") lines.push("Address: " + address + ", " + postcode);
-    if (notes) lines.push("Notes: " + notes);
-    const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(lines.join("\n"));
-    if (!window.open(url, "_blank")) location.href = url;
-  });
   // ---- Pay by card: sends the basket to a secure Stripe Checkout page ----
   function readOrder() {
     const data = new FormData(orderForm);
@@ -2213,7 +2192,7 @@
       location.href = data.url;
     } catch (err) {
       const reason = err.message === "Failed to fetch" ? "Card payment is not available right now." : err.message;
-      orderError.textContent = reason + " You can still send your order on WhatsApp or call us.";
+      orderError.textContent = reason + " Please try again, or call us on 0118 353 1999.";
       orderError.hidden = false;
       payBtn.disabled = false;
       payBtn.textContent = "Pay by card";
