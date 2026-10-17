@@ -670,8 +670,8 @@
         <div class="cat-block" id="cat-sauces" data-cat="sauces" data-name="Sauces">
           <h3>Sauces<small>2 items</small></h3>
           <div class="grid">
-            <div class="item" data-name="Garlic Sauce" data-cat="sauces" data-search="garlic sauce sauces"><a class="item-open" href="#z-garlic-sauce"><img class="thumb" src="images/dishes/garlic-sauce.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Garlic Sauce</span><span class="price">£0.00</span></a><button class="item-add" type="button" data-add="Garlic Sauce" data-price="0.00">Order now</button></div>
-            <div class="item" data-name="Chilli Sauce" data-cat="sauces" data-search="chilli sauce sauces"><a class="item-open" href="#z-chilli-sauce"><img class="thumb" src="images/dishes/chilli-sauce.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Chilli Sauce</span><span class="price">£0.00</span></a><button class="item-add" type="button" data-add="Chilli Sauce" data-price="0.00">Order now</button></div>
+            <div class="item" data-name="Garlic Sauce" data-cat="sauces" data-search="garlic sauce sauces"><a class="item-open" href="#z-garlic-sauce"><img class="thumb" src="images/dishes/garlic-sauce.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Garlic Sauce</span><span class="price">£2.00</span></a><button class="item-add" type="button" data-add="Garlic Sauce" data-price="2">Order now</button></div>
+            <div class="item" data-name="Chilli Sauce" data-cat="sauces" data-search="chilli sauce sauces"><a class="item-open" href="#z-chilli-sauce"><img class="thumb" src="images/dishes/chilli-sauce.jpg" alt="" width="300" height="300" loading="lazy"><span class="name">Chilli Sauce</span><span class="price">£2.00</span></a><button class="item-add" type="button" data-add="Chilli Sauce" data-price="2">Order now</button></div>
           </div>
         </div>
       </div>
@@ -1766,9 +1766,9 @@
         <p class="dish-cat">Sauces</p>
         <div class="dish-divider" aria-hidden="true"></div>
         <h3 class="dish-name">Garlic Sauce</h3>
-        <p class="dish-price">£0.00</p>
+        <p class="dish-price">£2.00</p>
       </div>
-      <div class="zoom-add"><button type="button" class="btn-add" data-add="Garlic Sauce" data-price="0.00">Add to order</button></div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Garlic Sauce" data-price="2">Add to order</button></div>
       <nav class="zoom-nav" aria-label="Other dishes">
         <a class="zoom-step" href="#z-capri-sun" rel="prev">‹ Previous</a>
         <span class="zoom-count">57 of 58</span>
@@ -1784,9 +1784,9 @@
         <p class="dish-cat">Sauces</p>
         <div class="dish-divider" aria-hidden="true"></div>
         <h3 class="dish-name">Chilli Sauce</h3>
-        <p class="dish-price">£0.00</p>
+        <p class="dish-price">£2.00</p>
       </div>
-      <div class="zoom-add"><button type="button" class="btn-add" data-add="Chilli Sauce" data-price="0.00">Add to order</button></div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Chilli Sauce" data-price="2">Add to order</button></div>
       <nav class="zoom-nav" aria-label="Other dishes">
         <a class="zoom-step" href="#z-garlic-sauce" rel="prev">‹ Previous</a>
         <span class="zoom-count">58 of 58</span>
@@ -2082,6 +2082,8 @@
   });
   // ---- Order basket ----
   const cart = [];
+  const SAUCES = ["Garlic Sauce", "Chilli Sauce"];
+  function dishTotal() { return cart.filter(l => !SAUCES.includes(l.name)).reduce((s, l) => s + l.price * l.qty, 0); }
   const orderBar = document.getElementById("orderBar");
   const orderPanel = document.getElementById("orderPanel");
   const orderForm = document.getElementById("orderForm");
@@ -2123,6 +2125,12 @@
   document.addEventListener("click", e => {
     const btn = e.target.closest("[data-add]");
     if (!btn) return;
+    if (SAUCES.includes(btn.dataset.add) && dishTotal() < 2) {
+      const shown = btn.textContent;
+      btn.textContent = "Order £2 first";
+      setTimeout(() => { btn.textContent = shown; }, 1800);
+      return;
+    }
     addToCart(btn.dataset.add, Number(btn.dataset.price));
     const label = btn.textContent;
     btn.textContent = btn.classList.contains("item-add") ? "Added ✓" : "Added to your order";
@@ -2168,6 +2176,7 @@
     };
     let problem = "";
     if (cart.length === 0) problem = "Add at least one dish first.";
+    else if (dishTotal() < 2) problem = "Your order must be at least £2 before you add sauces.";
     else if (!order.name || !order.phone) problem = "Please add your name and phone number.";
     else if (order.type === "delivery" && (!order.address || !order.postcode)) problem = "Please add your address and postcode for delivery.";
     orderError.textContent = problem;
