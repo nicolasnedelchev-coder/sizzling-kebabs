@@ -1,0 +1,2299 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sizzling Kebabs Restaurant | Charcoal Grill Persian Kebabs in Reading</title>
+  <meta name="description" content="Sizzling Kebabs Restaurant in Reading, RG30 1HJ. Charcoal grill Persian-style kebabs, burgers, seafood, family platters and more. Call 0118 353 1999.">
+  <meta name="keywords" content="kebabs Reading, Persian kebab Reading, charcoal grill Reading, Sizzling Kebabs, Oxford Road restaurant, family platter Reading">
+  <meta name="theme-color" content="#7a1f2b">
+  <meta name="robots" content="index, follow">
+  <script>document.documentElement.classList.add("js");</script>
+
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Sizzling Kebabs Restaurant, Reading">
+  <meta property="og:description" content="Charcoal grill Persian-style kebabs, family platters and more, at 531 Oxford Road, Reading.">
+  <meta property="og:image" content="images/charcoal-grill.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8D%A2%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Sizzling Kebabs Restaurant",
+    "description": "Charcoal grill Persian-style kebabs, burgers, seafood, kids' meals and family platters.",
+    "image": "images/charcoal-grill.jpg",
+    "servesCuisine": ["Persian", "Middle Eastern", "Turkish", "Burgers"],
+    "priceRange": "£££",
+    "telephone": ["+441183531999", "+447551559009"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "531 Oxford Road",
+      "addressLocality": "Reading",
+      "postalCode": "RG30 1HJ",
+      "addressCountry": "GB"
+    },
+    "hasMenu": "#menu"
+  }
+  </script>
+
+  <style>
+    :root {
+      --cream: rgba(30, 20, 14, .6);
+      --paper: rgba(24, 16, 11, .7);
+      --ink: #f7ecdc;
+      --muted: #dcc7ad;
+      --terracotta: #c44b1f;
+      --terracotta-dark: #9e3a14;
+      --burgundy: #7a1f2b;
+      --teal: #1f4e5a;
+      --line: rgba(255, 226, 190, .22);
+      --title: #f0c9a4;
+      --radius: 14px;
+      --shadow: 0 6px 18px rgba(43, 29, 20, .10);
+    }
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    html { scroll-behavior: smooth; scroll-padding-top: 72px; background: #140d09; }
+    body {
+      margin: 0;
+      font-family: "Jost", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: transparent;
+      color: var(--ink);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: #f0a27a; }
+    h1, h2, h3 { font-family: "Cormorant Garamond", Georgia, serif; line-height: 1.2; margin: 0 0 .5em; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); color: var(--title); }
+    .wrap { width: 100%; max-width: 1140px; margin: 0 auto; padding: 0 16px; }
+    section { padding: 56px 0; }
+    .eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: .78rem; font-weight: 600; color: #f0a27a; margin: 0 0 6px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 13px 22px; border-radius: 999px; font: 600 .98rem "Jost", sans-serif;
+      text-decoration: none; border: 2px solid transparent; cursor: pointer; transition: transform .15s, background .2s, color .2s;
+      min-height: 48px;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn:focus-visible, .chip:focus-visible, .nav a:focus-visible, input:focus-visible, button:focus-visible { outline: 3px solid var(--terracotta); outline-offset: 2px; }
+    .btn-primary { background: var(--terracotta); color: #fff; }
+    .btn-primary:hover { background: var(--terracotta-dark); }
+    .btn-ghost { background: transparent; color: #fff; border-color: #fff; }
+    .btn-ghost:hover { background: #fff; color: var(--burgundy); }
+    .btn-outline { background: transparent; color: var(--title); border-color: var(--title); }
+    .btn-outline:hover { background: var(--burgundy); color: #fff; }
+
+    /* Header */
+    header.site {
+      position: sticky; top: 0; z-index: 50;
+      background: var(--burgundy); color: #fff;
+      box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    }
+    .bar { display: flex; align-items: center; justify-content: space-between; height: 66px; }
+    .brand { display: flex; align-items: center; gap: 10px; color: #fff; text-decoration: none; font-family: "Cormorant Garamond", serif; font-weight: 800; font-size: 1.1rem; line-height: 1.1; }
+    .brand .flame { font-size: 1.6rem; }
+    .brand small { display: block; font-family: "Jost", sans-serif; font-weight: 500; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; opacity: .85; }
+    .nav { display: none; }
+    .nav a { color: #fff; text-decoration: none; font-weight: 500; padding: 8px 12px; border-radius: 8px; }
+    .nav a:hover, .nav a.active { background: rgba(255,255,255,.14); }
+    .nav-toggle {
+      background: none; border: 2px solid #fff; color: #fff; border-radius: 10px;
+      width: 46px; height: 42px; cursor: pointer; display: grid; place-items: center;
+    }
+    .nav-toggle span, .nav-toggle span::before, .nav-toggle span::after {
+      display: block; width: 20px; height: 2px; background: #fff; position: relative; content: "";
+    }
+    .nav-toggle span::before { position: absolute; top: -6px; left: 0; }
+    .nav-toggle span::after { position: absolute; top: 6px; left: 0; }
+    .mobile-nav {
+      display: none; flex-direction: column; padding: 8px 16px 16px; gap: 4px;
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a { color: #fff; text-decoration: none; padding: 12px; border-radius: 10px; font-weight: 500; }
+    .mobile-nav a:hover { background: rgba(255,255,255,.12); }
+
+    /* Hero */
+    .hero {
+      position: relative; min-height: 72vh; display: flex; align-items: center; color: #fff;
+      background: radial-gradient(circle at 25% 15%, #a4402a 0%, transparent 55%), linear-gradient(160deg, #5c1620 0%, #2b1d14 100%);
+    }
+    .hero-inner { position: relative; width: 100%; padding: 72px 16px 56px; text-align: center; max-width: 820px; margin: 0 auto; }
+    .hero-dishes { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 8px; max-width: 272px; margin: 28px auto 0; }
+    .hero-dishes img {
+      width: 62px; height: 62px; border-radius: 50%; object-fit: cover;
+      border: 3px solid rgba(255,255,255,.85); box-shadow: 0 4px 12px rgba(0,0,0,.35);
+    }
+    .hero h1 { font-size: clamp(2.2rem, 7vw, 4.2rem); margin-bottom: .2em; text-shadow: 0 2px 12px rgba(0,0,0,.4); }
+    .hero .sub { font-size: clamp(1rem, 2.6vw, 1.25rem); opacity: .95; margin-bottom: 26px; }
+    .hero .cta { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+    .hero .tag {
+      display: inline-block; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.4);
+      padding: 6px 14px; border-radius: 999px; font-size: .85rem; margin-bottom: 18px;
+    }
+    .open-badge { margin-top: 22px; font-size: .95rem; opacity: .9; }
+
+    /* Intro */
+    .intro { display: grid; grid-template-columns: minmax(0, 1fr); gap: 32px; align-items: center; }
+    .intro img { border-radius: var(--radius); box-shadow: var(--shadow); width: 100%; height: auto; }
+    .intro p { color: var(--muted); }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 18px; }
+    .feature { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; text-align: center; }
+    .feature b { display: block; font-size: 1.5rem; }
+    .feature span { font-size: .9rem; color: var(--muted); }
+
+    /* Menu */
+    #menu { background: var(--paper); }
+    .menu-head { text-align: center; margin-bottom: 22px; }
+    .menu-head p { color: var(--muted); max-width: 640px; margin: 0 auto; }
+    .toolbar { display: flex; flex-direction: column; gap: 12px; margin-bottom: 18px; }
+    .search {
+      position: relative; width: 100%;
+    }
+    .search input {
+      width: 100%; padding: 13px 16px 13px 44px; font: 500 1rem "Jost", sans-serif;
+      border: 2px solid var(--line); border-radius: 999px; background: var(--cream); color: var(--ink);
+    }
+    .search::before { content: "🔍"; position: absolute; left: 14px; top: 50%; transform: translateY(-50%); font-size: .95rem; }
+    .chips { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 10px; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
+    .chip {
+      flex: 0 0 auto; border: 2px solid var(--line); background: var(--cream); color: var(--ink);
+      min-height: 44px; display: inline-flex; align-items: center; text-decoration: none; padding: 9px 16px; border-radius: 999px; font: 600 .9rem "Jost", sans-serif; cursor: pointer; white-space: nowrap;
+    }
+    .chip[aria-pressed="true"] { background: var(--burgundy); border-color: var(--burgundy); color: #fff; }
+    .chip:hover { border-color: var(--burgundy); }
+    .cat-block { margin-top: 26px; }
+    .cat-block h3 {
+      font-size: 1.45rem; color: var(--title); display: flex; align-items: center; gap: 10px;
+      padding-bottom: 8px; border-bottom: 2px solid var(--line);
+    }
+    .cat-block h3 small { font-family: "Jost", sans-serif; font-size: .8rem; color: var(--muted); font-weight: 500; margin-left: auto; }
+    .grid { display: grid; grid-template-columns: 1fr; gap: 10px; margin-top: 14px; }
+    .item {
+      background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 10px 14px; display: grid; grid-template-columns: 72px 1fr auto; align-items: center; gap: 12px;
+      cursor: pointer; transition: transform .15s, box-shadow .2s, border-color .2s; text-align: left; font: inherit; color: inherit; width: 100%;
+    }
+    .item:hover { transform: translateY(-2px); box-shadow: var(--shadow); border-color: var(--terracotta); }
+    .item.picked { border-color: var(--terracotta); background: #fff3e6; }
+    .item .name { font-weight: 600; line-height: 1.3; }
+    .item .thumb {
+      width: 72px; height: 72px; border-radius: 12px; object-fit: cover;
+      background-color: #fff; box-shadow: 0 2px 8px rgba(43, 29, 20, .12);
+    }
+    .item .price { font-weight: 700; color: #f0a27a; font-size: 1.1rem; white-space: nowrap; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    .item .tip { font-size: .8rem; color: var(--muted); margin-top: 2px; }
+    .empty { text-align: center; color: var(--muted); padding: 30px 0; }
+    .notice {
+      margin-top: 26px; padding: 14px 16px; border-left: 4px solid var(--terracotta);
+      background: var(--cream); border-radius: 10px; font-size: .92rem; color: var(--muted);
+    }
+    .menu-actions { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 24px; }
+
+    /* Platter */
+    .platter { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; align-items: center; }
+    .platter img { border-radius: var(--radius); box-shadow: var(--shadow); width: 100%; height: auto; background: #fff; }
+    .price-big { font-family: "Cormorant Garamond", serif; font-size: 2.4rem; font-weight: 800; color: #f0a27a; margin: 6px 0; }
+    .platter ul { padding-left: 20px; color: var(--muted); }
+    .platter ul li { margin-bottom: 4px; }
+
+    /* Visit */
+    #visit { background: var(--burgundy); color: #fff; }
+    #visit h2 { color: #fff; }
+    #visit .eyebrow { color: #ffd7b8; }
+    .visit-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+    .card {
+      background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.2); border-radius: var(--radius); padding: 22px;
+    }
+    .card h3 { font-size: 1.2rem; color: #fff; }
+    .card p { margin: 6px 0; opacity: .95; }
+    .card a { color: #ffd7b8; font-weight: 600; }
+    .card .btn { margin-top: 10px; }
+    .card .btn-ghost { font-size: .95rem; }
+    .phone-list { list-style: none; padding: 0; margin: 0; }
+    .phone-list li { margin: 6px 0; }
+    .phone-list a { font-size: 1.15rem; text-decoration: none; }
+    .phone-list a:hover { text-decoration: underline; }
+    .allergy { font-size: .9rem; opacity: .9; margin-top: 16px; }
+
+    /* Footer */
+    footer { background: #1a100b; color: #d9c8b3; padding: 28px 0; font-size: .92rem; text-align: center; }
+    footer a { color: #ffd7b8; }
+
+    /* Lightbox */
+    .lightbox {
+      position: fixed; inset: 0; background: rgba(15,8,5,.9); display: none;
+      align-items: center; justify-content: center; padding: 16px; z-index: 100;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-width: 100%; max-height: 92vh; border-radius: 10px; }
+    .lightbox button {
+      position: absolute; top: 14px; right: 14px; width: 46px; height: 46px; border-radius: 50%;
+      border: 0; background: #fff; color: var(--burgundy); font-size: 1.6rem; line-height: 1; cursor: pointer;
+    }
+
+    /* Dish popup */
+    .dish-dialog {
+      border: 0; padding: 0; width: min(92vw, 420px); max-width: 92vw; max-height: 92vh; overflow-y: auto;
+      border-radius: 24px; background: #241912; color: var(--ink);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, .45);
+    }
+    .dish-dialog::backdrop { background: rgba(20, 10, 6, .78); backdrop-filter: blur(3px); }
+    .dish-dialog:not([open]) { display: none; }
+    .dish-dialog[open] { animation: dishIn .32s cubic-bezier(.2, .8, .2, 1); }
+    @keyframes dishIn {
+      from { opacity: 0; transform: translateY(18px) scale(.97); }
+      to { opacity: 1; transform: none; }
+    }
+    .dish-close {
+      position: absolute; top: 12px; right: 12px; z-index: 2;
+      width: 44px; height: 44px; border-radius: 50%; border: 0;
+      background: rgba(255, 255, 255, .95); color: var(--burgundy);
+      font-size: 1.6rem; line-height: 1; cursor: pointer; box-shadow: 0 2px 8px rgba(0, 0, 0, .25);
+    }
+    .dish-photo { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; background: #fff; }
+    .dish-info { padding: 22px 24px 28px; text-align: center; }
+    .dish-cat {
+      font-size: .74rem; letter-spacing: .2em; text-transform: uppercase; font-weight: 600;
+      color: #f0a27a; margin: 0 0 8px;
+    }
+    .dish-divider { width: 64px; height: 2px; margin: 0 auto 12px; background: linear-gradient(90deg, transparent, #b8925a, transparent); }
+    .dish-name {
+      font-family: "Cormorant Garamond", Georgia, serif; font-weight: 700;
+      font-size: clamp(2.1rem, 9vw, 2.7rem); line-height: 1.05; color: var(--title); margin: 0 0 10px;
+    }
+    .dish-price { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; font-size: 1.9rem; color: #f0a27a; margin: 0; }
+    @media (prefers-reduced-motion: reduce) {
+      .dish-dialog[open] { animation: none; }
+    }
+
+    /* Back to top */
+    .to-top {
+      position: fixed; right: 16px; bottom: 16px; width: 48px; height: 48px; border-radius: 50%;
+      background: var(--terracotta); color: #fff; border: 0; font-size: 1.2rem; cursor: pointer;
+      box-shadow: var(--shadow); display: grid; place-items: center; text-decoration: none; z-index: 40;
+    }
+    .to-top.show { opacity: 1; pointer-events: auto; }
+
+    /* Reveal */
+    .js .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+    .reveal.in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
+
+    /* Responsive */
+    @media (min-width: 560px) {
+      .grid { grid-template-columns: 1fr 1fr; }
+      .toolbar { flex-direction: row; align-items: center; }
+      .search { flex: 1; }
+    }
+    @media (min-width: 760px) {
+      .nav { display: flex; gap: 4px; }
+      .nav-toggle { display: none; }
+      .mobile-nav { display: none !important; }
+      .intro { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .platter { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .visit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      section { padding: 72px 0; }
+    }
+    @media (min-width: 960px) {
+      .grid { grid-template-columns: 1fr 1fr 1fr; }
+    }
+    @media (max-width: 380px) {
+      .brand small { display: none; }
+    }
+    /* Dish photos */
+    .ph-koobideh-kebab { background-image: url(images/dishes/koobideh-kebab.jpg); }
+    .ph-chicken-shish { background-image: url(images/dishes/chicken-shish.jpg); }
+    .ph-lamb-shish { background-image: url(images/dishes/lamb-shish.jpg); }
+    .ph-double-shish { background-image: url(images/dishes/double-shish.jpg); }
+    .ph-special-kebab { background-image: url(images/dishes/special-kebab.jpg); }
+    .ph-barg-kebab { background-image: url(images/dishes/barg-kebab.jpg); }
+    .ph-soltani-kebab { background-image: url(images/dishes/soltani-kebab.jpg); }
+    .ph-barbecue-ribs { background-image: url(images/dishes/barbecue-ribs.jpg); }
+    .ph-chicken-wings { background-image: url(images/dishes/chicken-wings.jpg); }
+    .ph-charcoal-chicken { background-image: url(images/dishes/charcoal-chicken.jpg); }
+    .ph-whole-chicken-kebab { background-image: url(images/dishes/whole-chicken-kebab.jpg); }
+    .ph-lamb-doner { background-image: url(images/dishes/lamb-doner.jpg); }
+    .ph-chicken-doner { background-image: url(images/dishes/chicken-doner.jpg); }
+    .ph-mixed-doner { background-image: url(images/dishes/mixed-doner.jpg); }
+    .ph-sea-bass { background-image: url(images/dishes/sea-bass.jpg); }
+    .ph-salmon { background-image: url(images/dishes/salmon.jpg); }
+    .ph-sea-bream { background-image: url(images/dishes/sea-bream.jpg); }
+    .ph-prawns { background-image: url(images/dishes/prawns.jpg); }
+    .ph-tashreeb { background-image: url(images/dishes/tashreeb.jpg); }
+    .ph-kabuli-pulao { background-image: url(images/dishes/kabuli-pulao.jpg); }
+    .ph-fries { background-image: url(images/dishes/fries.jpg); }
+    .ph-tacco-chips { background-image: url(images/dishes/tacco-chips.jpg); }
+    .ph-taco-cheese-chips { background-image: url(images/dishes/taco-cheese-chips.jpg); }
+    .ph-cheese-chips { background-image: url(images/dishes/cheese-chips.jpg); }
+    .ph-garlic-cheese-chips { background-image: url(images/dishes/garlic-cheese-chips.jpg); }
+    .ph-curry-chips { background-image: url(images/dishes/curry-chips.jpg); }
+    .ph-curry-cheese-chips { background-image: url(images/dishes/curry-cheese-chips.jpg); }
+    .ph-halloumi-cheese-salad { background-image: url(images/dishes/halloumi-cheese-salad.jpg); }
+    .ph-hummus { background-image: url(images/dishes/hummus.jpg); }
+    .ph-tzatziki { background-image: url(images/dishes/tzatziki.jpg); }
+    .ph-shirazi-salad { background-image: url(images/dishes/shirazi-salad.jpg); }
+    .ph-mousir { background-image: url(images/dishes/mousir.jpg); }
+    .ph-single-beef-burger { background-image: url(images/dishes/single-beef-burger.jpg); }
+    .ph-double-beef-burger { background-image: url(images/dishes/double-beef-burger.jpg); }
+    .ph-special-beef-burger { background-image: url(images/dishes/special-beef-burger.jpg); }
+    .ph-chicken-fillet-burger { background-image: url(images/dishes/chicken-fillet-burger.jpg); }
+    .ph-fish-burger { background-image: url(images/dishes/fish-burger.jpg); }
+    .ph-chicken-doner-burger { background-image: url(images/dishes/chicken-doner-burger.jpg); }
+    .ph-lamb-doner-burger { background-image: url(images/dishes/lamb-doner-burger.jpg); }
+    .ph-mixed-doner-burger { background-image: url(images/dishes/mixed-doner-burger.jpg); }
+    .ph-chicken-tenders { background-image: url(images/dishes/chicken-tenders.jpg); }
+    .ph-chicken-nuggets { background-image: url(images/dishes/chicken-nuggets.jpg); }
+    .ph-ghoozi { background-image: url(images/dishes/ghoozi.jpg); }
+    .ph-zereshk-polo-with-chicken { background-image: url(images/dishes/zereshk-polo-with-chicken.jpg); }
+    .ph-ghormeh-sabzi { background-image: url(images/dishes/ghormeh-sabzi.jpg); }
+    .ph-fresh-falafel { background-image: url(images/dishes/fresh-falafel.jpg); }
+    .ph-lahmacun { background-image: url(images/dishes/lahmacun.jpg); }
+    .ph-kumpir-potato { background-image: url(images/dishes/kumpir-potato.jpg); }
+    .ph-coca-cola { background-image: url(images/dishes/coca-cola.jpg); }
+    .ph-coca-cola-zero { background-image: url(images/dishes/coca-cola-zero.jpg); }
+    .ph-fanta { background-image: url(images/dishes/fanta.jpg); }
+    .ph-water { background-image: url(images/dishes/water.jpg); }
+    .ph-ayran { background-image: url(images/dishes/ayran.jpg); }
+    .ph-7up { background-image: url(images/dishes/7up.jpg); }
+    .ph-sprite { background-image: url(images/dishes/sprite.jpg); }
+    .ph-capri-sun { background-image: url(images/dishes/capri-sun.jpg); }
+    .ph-garlic-sauce { background-image: url(images/dishes/garlic-sauce.jpg); }
+    .ph-chilli-sauce { background-image: url(images/dishes/chilli-sauce.jpg); }
+    .item { text-decoration: none; }
+    .item .thumb { display: block; background-color: #fff; background-size: cover; background-position: center; }
+    .zoom { display: none; position: fixed; inset: 0; z-index: 90; background: rgba(20, 10, 6, .85); align-items: center; justify-content: center; padding: 16px; }
+    .zoom:target { display: flex; }
+    .zoom-card {
+      width: min(92vw, 420px); max-height: 92vh; overflow-y: auto; background: #241912; color: var(--ink);
+      border-radius: 24px; box-shadow: 0 30px 60px rgba(0, 0, 0, .45); animation: dishIn .3s cubic-bezier(.2, .8, .2, 1);
+    }
+    .zoom-bar { padding: 12px 14px 0; }
+    .zoom-back { min-height: 44px; padding: 10px 18px; font-size: .95rem; background: #241912; color: var(--title); border-color: var(--title); }
+    .zoom-photo { width: 100%; aspect-ratio: 1 / 1; background-color: #fff; background-size: cover; background-position: center; }
+    @media (prefers-reduced-motion: reduce) { .zoom-card { animation: none; } }    /* Menu: two-column cards */
+    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .item { display: flex; flex-direction: column; align-items: stretch; gap: 0; padding: 0; overflow: hidden; }
+    .item .thumb { width: 100%; height: auto; aspect-ratio: 1 / 1; border-radius: 0; box-shadow: none; }
+    .item .name { display: block; padding: 10px 12px 2px; font-size: .92rem; }
+    .item .price { display: block; padding: 0 12px 12px; font-size: 1rem; }
+    @media (min-width: 560px) { .grid { gap: 14px; } }
+    @media (min-width: 960px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }    /* Category panel */
+    .cat-toast {
+      position: fixed; left: 50%; top: 50%; z-index: 80; min-width: 210px; max-width: 86vw;
+      padding: 20px 30px; border-radius: 18px; text-align: center; color: #fff;
+      background: rgba(20, 10, 6, .88); box-shadow: 0 24px 50px rgba(0, 0, 0, .45);
+      opacity: 0; pointer-events: none; transform: translate(-50%, -46%) scale(.94);
+      transition: opacity .4s ease, transform .55s cubic-bezier(.2, .8, .2, 1);
+    }
+    .cat-toast.show { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+    .cat-toast-kicker { margin: 0; font-size: .7rem; letter-spacing: .24em; text-transform: uppercase; color: #f0c9a4; }
+    .cat-toast-rule {
+      width: 0; height: 2px; margin: 10px auto; background: linear-gradient(90deg, transparent, #b8925a, transparent);
+      transition: width .7s ease .15s;
+    }
+    .cat-toast.show .cat-toast-rule { width: 96px; }
+    .cat-toast-name {
+      margin: 0; font-family: "Cormorant Garamond", Georgia, serif; font-weight: 700; font-size: 2.2rem; line-height: 1.05;
+    }
+    .cat-toast-count { margin: 6px 0 0; font-size: .85rem; opacity: .85; }
+    @media (prefers-reduced-motion: reduce) {
+      .cat-toast, .cat-toast-rule { transition: none; }
+    }
+    /* Dish steps */
+    .zoom-nav { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 16px 18px; border-top: 1px solid var(--line); }
+    .zoom-step {
+      min-height: 44px; display: inline-flex; align-items: center; padding: 8px 16px; border-radius: 999px;
+      background: var(--burgundy); color: #fff; text-decoration: none; font-weight: 600; font-size: .92rem;
+    }
+    .zoom-count { font-size: .85rem; color: var(--muted); }    /* Fixed background photo */
+    .bg-photo {
+      position: fixed; inset: 0; z-index: -1; pointer-events: none;
+      background: #120c09 url(images/bg-charcoal.jpg) center / 100% 100% no-repeat;
+      filter: brightness(.85); transform: none;
+    }    /* Ordering */
+    .btn-add {
+      width: 100%; min-height: 48px; border: 0; border-radius: 999px; cursor: pointer;
+      background: var(--terracotta); color: #fff; font: 600 1rem "Jost", sans-serif; letter-spacing: .02em;
+    }
+    .btn-add:hover { background: var(--terracotta-dark); }
+    .zoom-add { display: none; padding: 0 16px 4px; }
+    .js .zoom-add { display: block; }
+    .order-bar {
+      position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 70;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      min-height: 56px; padding: 10px 20px; border: 0; border-radius: 999px; cursor: pointer;
+      background: linear-gradient(135deg, #c44b1f, #9e3a14); color: #fff; font: 600 1rem "Jost", sans-serif;
+      box-shadow: 0 16px 34px rgba(0, 0, 0, .45);
+    }
+    .order-bar[hidden] { display: none !important; }
+    .order-bar-total { font-family: "Cormorant Garamond", Georgia, serif; font-size: 1.4rem; font-weight: 700; }
+    .order-panel { position: fixed; inset: 0; z-index: 95; display: flex; align-items: flex-end; justify-content: center; background: rgba(12, 7, 4, .75); }
+    .order-card {
+      width: 100%; max-width: 520px; max-height: 92vh; overflow-y: auto; background: #1d140f; color: #f7ecdc;
+      border-radius: 24px 24px 0 0; padding: 22px 20px 28px; box-shadow: 0 -20px 60px rgba(0, 0, 0, .5);
+    }
+    @media (min-width: 560px) { .order-panel { align-items: center; } .order-card { border-radius: 24px; } }
+    .order-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
+    .order-head h3 { margin: 0; font-family: "Cormorant Garamond", Georgia, serif; font-size: 2rem; font-weight: 700; color: var(--title); }
+    .order-close {
+      width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line); background: transparent;
+      color: #f7ecdc; font-size: 1.6rem; line-height: 1; cursor: pointer;
+    }
+    .order-lines { list-style: none; margin: 0; padding: 0; }
+    .order-line {
+      display: grid; grid-template-columns: 1fr auto; gap: 8px 12px; align-items: center;
+      padding: 12px 0; border-bottom: 1px solid var(--line);
+    }
+    .order-line-name { font-weight: 600; }
+    .order-line-price { font-weight: 600; color: #f0a27a; }
+    .order-qty { display: inline-flex; align-items: center; gap: 10px; }
+    .order-qty button {
+      width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: transparent;
+      color: #f7ecdc; font-size: 1.2rem; cursor: pointer;
+    }
+    .order-remove { justify-self: end; background: none; border: 0; color: #f0a27a; text-decoration: underline; cursor: pointer; font-size: .9rem; padding: 0; }
+    .order-empty { color: var(--muted); text-align: center; padding: 18px 0; margin: 0; }
+    .order-type { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 16px 0 4px; }
+    .order-type label { position: relative; }
+    .order-type input { position: absolute; opacity: 0; pointer-events: none; }
+    .order-type span {
+      display: block; text-align: center; padding: 12px; border-radius: 999px; border: 1px solid var(--line);
+      font-weight: 600; cursor: pointer;
+    }
+    .order-type input:checked + span { background: var(--burgundy); border-color: var(--burgundy); color: #fff; }
+    .order-type input:focus-visible + span { outline: 3px solid #f0a27a; outline-offset: 2px; }
+    .order-form label {
+      display: block; margin-top: 12px; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
+    }
+    .order-form input, .order-form textarea {
+      display: block; width: 100%; margin-top: 6px; padding: 12px 14px; border-radius: 12px;
+      border: 1px solid var(--line); background: rgba(255, 255, 255, .06); color: #f7ecdc;
+      font: 500 1rem "Jost", sans-serif; text-transform: none; letter-spacing: 0;
+    }
+    .order-form input:focus, .order-form textarea:focus { outline: 2px solid #f0a27a; outline-offset: 1px; }
+    .order-totals { margin-top: 16px; display: grid; gap: 6px; color: var(--muted); }
+    .order-totals div { display: flex; justify-content: space-between; gap: 12px; }
+    .order-error { color: #ffb4a0; font-size: .95rem; margin: 12px 0 0; }
+    .order-send { width: 100%; min-height: 54px; margin-top: 14px; font-size: 1.05rem; }
+    .order-fine { text-align: center; font-size: .85rem; color: var(--muted); margin: 12px 0 0; }
+    .order-fine a { color: #f0a27a; }  </style>
+</head>
+<body>
+<div class="bg-photo" aria-hidden="true"></div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Sizzling Kebabs Restaurant, home">
+      <span class="flame" aria-hidden="true">🔥</span>
+      <span>SIZZLING KEBABS<small>Restaurant · Reading</small></span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="#menu">Menu</a>
+      <a href="#platter">Family Platter</a>
+      <a href="#about">About</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+      <span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+    <a href="#menu">Menu</a>
+    <a href="#platter">Family Platter</a>
+    <a href="#about">About</a>
+    <a href="#visit">Visit</a>
+    <a href="tel:+441183531999">📞 Call 0118 353 1999</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-inner">
+      <span class="tag">🔥 Charcoal grilled · Persian style</span>
+      <h1>Charcoal Grill Kebabs</h1>
+      <p class="sub">Persian style, sizzling fresh from the grill, in the heart of Reading.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="#menu">View Menu</a>
+        <a class="btn btn-ghost" href="tel:+441183531999">📞 Call Us</a>
+        <a class="btn btn-ghost" href="#visit">📍 Find Us</a>
+      </div>
+      <p class="open-badge">531 Oxford Road, Reading RG30 1HJ</p>
+      <div class="hero-dishes" aria-hidden="true"><img src="images/dishes/koobideh-kebab.jpg" alt="" width="300" height="300"><img src="images/dishes/special-kebab.jpg" alt="" width="300" height="300"><img src="images/dishes/chicken-shish.jpg" alt="" width="300" height="300"><img src="images/dishes/barbecue-ribs.jpg" alt="" width="300" height="300"><img src="images/dishes/sea-bream.jpg" alt="" width="300" height="300"><img src="images/dishes/salmon.jpg" alt="" width="300" height="300"><img src="images/dishes/prawns.jpg" alt="" width="300" height="300"></div>
+    </div>
+  </div>
+
+  <!-- INTRO -->
+  <section id="about">
+    <div class="wrap intro">
+      <div class="reveal">
+        <img src="images/poster.jpg" alt="Sizzling Kebabs Restaurant poster with a woman picking pomegranates, charcoal grill kebabs Persian style" loading="lazy" width="1127" height="1600">
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">Welcome to Sizzling Kebabs</p>
+        <h2>Persian Flavours, Cooked Over Charcoal</h2>
+        <p>Our kebabs are grilled over charcoal in the traditional Persian way, with fluffy rice, fresh salads and warm naan. Come in for a classic koobideh, a sharing platter, or something from our wider menu of burgers, seafood and doner.</p>
+        <p>Whether you're here for a quick bite or a family meal, we want every visit to feel warm, generous and full of flavour.</p>
+        <div class="features">
+          <div class="feature"><b>🔥</b><span>Charcoal grilled</span></div>
+          <div class="feature"><b>🍚</b><span>Served with rice or naan</span></div>
+          <div class="feature"><b>👨‍👩‍👧</b><span>Family platters</span></div>
+          <div class="feature"><b>🧒</b><span>Kids' meals</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu">
+    <div class="wrap">
+      <div class="menu-head reveal">
+        <p class="eyebrow">Our Menu</p>
+        <h2>Explore Our Menu</h2>
+        <p>Tap a category to browse. Tap any dish to see it up close.</p>
+      </div>
+      <div class="chips" id="chips" role="group" aria-label="Filter by category"><a class="chip" href="#menu" data-cat="all" aria-pressed="true">All</a>
+      <a class="chip" href="#cat-kebabs" data-cat="kebabs" aria-pressed="false">Kebabs</a>
+      <a class="chip" href="#cat-sides" data-cat="sides" aria-pressed="false">Side Orders</a>
+      <a class="chip" href="#cat-burgers" data-cat="burgers" aria-pressed="false">Burgers</a>
+      <a class="chip" href="#cat-kids" data-cat="kids" aria-pressed="false">Kids' Meals</a>
+      <a class="chip" href="#cat-also" data-cat="also" aria-pressed="false">Also on the Menu</a>
+      <a class="chip" href="#cat-drinks" data-cat="drinks" aria-pressed="false">Drinks</a>
+      <a class="chip" href="#cat-sauces" data-cat="sauces" aria-pressed="false">Sauces</a>
+    </div>
+
+      <div id="menuList">
+        <div class="cat-block" id="cat-kebabs" data-cat="kebabs" data-name="Kebabs">
+          <h3>Kebabs<small>20 items</small></h3>
+          <div class="grid">
+            <a class="item" href="#z-koobideh-kebab" data-name="Koobideh Kebab" data-cat="kebabs" data-search="koobideh kebab kebabs"><span class="thumb ph-koobideh-kebab" aria-hidden="true"></span><span class="name">Koobideh Kebab</span><span class="price">£12.00</span></a>
+            <a class="item" href="#z-chicken-shish" data-name="Chicken Shish" data-cat="kebabs" data-search="chicken shish kebabs"><span class="thumb ph-chicken-shish" aria-hidden="true"></span><span class="name">Chicken Shish</span><span class="price">£12.00</span></a>
+            <a class="item" href="#z-lamb-shish" data-name="Lamb Shish" data-cat="kebabs" data-search="lamb shish kebabs"><span class="thumb ph-lamb-shish" aria-hidden="true"></span><span class="name">Lamb Shish</span><span class="price">£15.00</span></a>
+            <a class="item" href="#z-double-shish" data-name="Double Shish" data-cat="kebabs" data-search="double shish kebabs"><span class="thumb ph-double-shish" aria-hidden="true"></span><span class="name">Double Shish</span><span class="price">£13.00</span></a>
+            <a class="item" href="#z-special-kebab" data-name="Special Kebab" data-cat="kebabs" data-search="special kebab kebabs"><span class="thumb ph-special-kebab" aria-hidden="true"></span><span class="name">Special Kebab</span><span class="price">£19.00</span></a>
+            <a class="item" href="#z-barg-kebab" data-name="Barg Kebab" data-cat="kebabs" data-search="barg kebab kebabs"><span class="thumb ph-barg-kebab" aria-hidden="true"></span><span class="name">Barg Kebab</span><span class="price">£16.00</span></a>
+            <a class="item" href="#z-soltani-kebab" data-name="Soltani Kebab" data-cat="kebabs" data-search="soltani kebab kebabs"><span class="thumb ph-soltani-kebab" aria-hidden="true"></span><span class="name">Soltani Kebab</span><span class="price">£16.00</span></a>
+            <a class="item" href="#z-barbecue-ribs" data-name="Barbecue Ribs" data-cat="kebabs" data-search="barbecue ribs kebabs"><span class="thumb ph-barbecue-ribs" aria-hidden="true"></span><span class="name">Barbecue Ribs</span><span class="price">£19.00</span></a>
+            <a class="item" href="#z-chicken-wings" data-name="Chicken Wings" data-cat="kebabs" data-search="chicken wings kebabs"><span class="thumb ph-chicken-wings" aria-hidden="true"></span><span class="name">Chicken Wings</span><span class="price">£9.00</span></a>
+            <a class="item" href="#z-charcoal-chicken" data-name="Charcoal Chicken" data-cat="kebabs" data-search="charcoal chicken kebabs"><span class="thumb ph-charcoal-chicken" aria-hidden="true"></span><span class="name">Charcoal Chicken</span><span class="price">£12.00</span></a>
+            <a class="item" href="#z-whole-chicken-kebab" data-name="Whole Chicken Kebab" data-cat="kebabs" data-search="whole chicken kebab kebabs"><span class="thumb ph-whole-chicken-kebab" aria-hidden="true"></span><span class="name">Whole Chicken Kebab</span><span class="price">£11.00</span></a>
+            <a class="item" href="#z-lamb-doner" data-name="Lamb Doner" data-cat="kebabs" data-search="lamb doner kebabs"><span class="thumb ph-lamb-doner" aria-hidden="true"></span><span class="name">Lamb Doner</span><span class="price">£9.00</span></a>
+            <a class="item" href="#z-chicken-doner" data-name="Chicken Doner" data-cat="kebabs" data-search="chicken doner kebabs"><span class="thumb ph-chicken-doner" aria-hidden="true"></span><span class="name">Chicken Doner</span><span class="price">£8.50</span></a>
+            <a class="item" href="#z-mixed-doner" data-name="Mixed Doner" data-cat="kebabs" data-search="mixed doner kebabs"><span class="thumb ph-mixed-doner" aria-hidden="true"></span><span class="name">Mixed Doner</span><span class="price">£9.00</span></a>
+                                                            <a class="item" href="#z-sea-bass" data-name="Sea Bass" data-cat="kebabs" data-search="sea bass kebabs"><span class="thumb ph-sea-bass" aria-hidden="true"></span><span class="name">Sea Bass</span><span class="price">£14.00</span></a>
+            <a class="item" href="#z-salmon" data-name="Salmon" data-cat="kebabs" data-search="salmon kebabs"><span class="thumb ph-salmon" aria-hidden="true"></span><span class="name">Salmon</span><span class="price">£15.00</span></a>
+            <a class="item" href="#z-sea-bream" data-name="Sea Bream" data-cat="kebabs" data-search="sea bream kebabs"><span class="thumb ph-sea-bream" aria-hidden="true"></span><span class="name">Sea Bream</span><span class="price">£14.00</span></a>
+            <a class="item" href="#z-prawns" data-name="Prawns" data-cat="kebabs" data-search="prawns kebabs"><span class="thumb ph-prawns" aria-hidden="true"></span><span class="name">Prawns</span><span class="price">£14.00</span></a>
+            <a class="item" href="#z-tashreeb" data-name="Tashreeb" data-cat="kebabs" data-search="tashreeb kebabs"><span class="thumb ph-tashreeb" aria-hidden="true"></span><span class="name">Tashreeb</span><span class="price">£14.00</span></a>
+            <a class="item" href="#z-kabuli-pulao" data-name="Kabuli Pulao" data-cat="kebabs" data-search="kabuli pulao kebabs"><span class="thumb ph-kabuli-pulao" aria-hidden="true"></span><span class="name">Kabuli Pulao</span><span class="price">£13.00</span></a>
+          </div>
+        </div>
+        <div class="cat-block" id="cat-sides" data-cat="sides" data-name="Side Orders">
+          <h3>Side Orders<small>12 items</small></h3>
+          <div class="grid">
+            <a class="item" href="#z-fries" data-name="Fries" data-cat="sides" data-search="fries side orders"><span class="thumb ph-fries" aria-hidden="true"></span><span class="name">Fries</span><span class="price">£2.50</span></a>
+            <a class="item" href="#z-tacco-chips" data-name="Tacco Chips" data-cat="sides" data-search="tacco chips side orders"><span class="thumb ph-tacco-chips" aria-hidden="true"></span><span class="name">Tacco Chips</span><span class="price">£4.00</span></a>
+            <a class="item" href="#z-taco-cheese-chips" data-name="Taco Cheese Chips" data-cat="sides" data-search="taco cheese chips side orders"><span class="thumb ph-taco-cheese-chips" aria-hidden="true"></span><span class="name">Taco Cheese Chips</span><span class="price">£5.00</span></a>
+            <a class="item" href="#z-cheese-chips" data-name="Cheese Chips" data-cat="sides" data-search="cheese chips side orders"><span class="thumb ph-cheese-chips" aria-hidden="true"></span><span class="name">Cheese Chips</span><span class="price">£4.00</span></a>
+            <a class="item" href="#z-garlic-cheese-chips" data-name="Garlic Cheese Chips" data-cat="sides" data-search="garlic cheese chips side orders"><span class="thumb ph-garlic-cheese-chips" aria-hidden="true"></span><span class="name">Garlic Cheese Chips</span><span class="price">£5.00</span></a>
+            <a class="item" href="#z-curry-chips" data-name="Curry Chips" data-cat="sides" data-search="curry chips side orders"><span class="thumb ph-curry-chips" aria-hidden="true"></span><span class="name">Curry Chips</span><span class="price">£3.50</span></a>
+            <a class="item" href="#z-curry-cheese-chips" data-name="Curry Cheese Chips" data-cat="sides" data-search="curry cheese chips side orders"><span class="thumb ph-curry-cheese-chips" aria-hidden="true"></span><span class="name">Curry Cheese Chips</span><span class="price">£3.50</span></a>
+            <a class="item" href="#z-halloumi-cheese-salad" data-name="Halloumi Cheese Salad" data-cat="sides" data-search="halloumi cheese salad side orders"><span class="thumb ph-halloumi-cheese-salad" aria-hidden="true"></span><span class="name">Halloumi Cheese Salad</span><span class="price">£6.00</span></a>
+            <a class="item" href="#z-hummus" data-name="Hummus" data-cat="sides" data-search="hummus side orders"><span class="thumb ph-hummus" aria-hidden="true"></span><span class="name">Hummus</span><span class="price">£2.00</span></a>
+            <a class="item" href="#z-tzatziki" data-name="Tzatziki" data-cat="sides" data-search="tzatziki side orders"><span class="thumb ph-tzatziki" aria-hidden="true"></span><span class="name">Tzatziki</span><span class="price">£2.00</span></a>
+            <a class="item" href="#z-shirazi-salad" data-name="Shirazi Salad" data-cat="sides" data-search="shirazi salad side orders"><span class="thumb ph-shirazi-salad" aria-hidden="true"></span><span class="name">Shirazi Salad</span><span class="price">£2.50</span></a>
+            <a class="item" href="#z-mousir" data-name="Mousir" data-cat="sides" data-search="mousir side orders"><span class="thumb ph-mousir" aria-hidden="true"></span><span class="name">Mousir</span><span class="price">£2.50</span></a>
+          </div>
+        </div>
+        <div class="cat-block" id="cat-burgers" data-cat="burgers" data-name="Burgers">
+          <h3>Burgers<small>5 items</small></h3>
+          <div class="grid">
+            <a class="item" href="#z-single-beef-burger" data-name="Single Beef Burger" data-cat="burgers" data-search="single beef burger burgers"><span class="thumb ph-single-beef-burger" aria-hidden="true"></span><span class="name">Single Beef Burger</span><span class="price">£4.50</span></a>
+            <a class="item" href="#z-double-beef-burger" data-name="Double Beef Burger" data-cat="burgers" data-search="double beef burger burgers"><span class="thumb ph-double-beef-burger" aria-hidden="true"></span><span class="name">Double Beef Burger</span><span class="price">£6.00</span></a>
+            <a class="item" href="#z-special-beef-burger" data-name="Special Beef Burger" data-cat="burgers" data-search="special beef burger burgers"><span class="thumb ph-special-beef-burger" aria-hidden="true"></span><span class="name">Special Beef Burger</span><span class="price">£8.50</span></a>
+            <a class="item" href="#z-chicken-fillet-burger" data-name="Chicken Fillet Burger" data-cat="burgers" data-search="chicken fillet burger burgers"><span class="thumb ph-chicken-fillet-burger" aria-hidden="true"></span><span class="name">Chicken Fillet Burger</span><span class="price">£4.50</span></a>
+            <a class="item" href="#z-fish-burger" data-name="Fish Burger" data-cat="burgers" data-search="fish burger burgers"><span class="thumb ph-fish-burger" aria-hidden="true"></span><span class="name">Fish Burger</span><span class="price">£4.50</span></a>
+          </div>
+        </div>
+        <div class="cat-block" id="cat-kids" data-cat="kids" data-name="Kids' Meals">
+          <h3>Kids' Meals<small>5 items</small></h3>
+          <div class="grid">
+            <a class="item" href="#z-chicken-doner-burger" data-name="Chicken Doner Burger" data-cat="kids" data-search="chicken doner burger kids' meals"><span class="thumb ph-chicken-doner-burger" aria-hidden="true"></span><span class="name">Chicken Doner Burger</span><span class="price">£7.50</span></a>
+            <a class="item" href="#z-lamb-doner-burger" data-name="Lamb Doner Burger" data-cat="kids" data-search="lamb doner burger kids' meals"><span class="thumb ph-lamb-doner-burger" aria-hidden="true"></span><span class="name">Lamb Doner Burger</span><span class="price">£8.00</span></a>
+            <a class="item" href="#z-mixed-doner-burger" data-name="Mixed Doner Burger" data-cat="kids" data-search="mixed doner burger kids' meals"><span class="thumb ph-mixed-doner-burger" aria-hidden="true"></span><span class="name">Mixed Doner Burger</span><span class="price">£8.00</span></a>
+            <a class="item" href="#z-chicken-tenders" data-name="Chicken Tenders" data-cat="kids" data-search="chicken tenders kids' meals"><span class="thumb ph-chicken-tenders" aria-hidden="true"></span><span class="name">Chicken Tenders</span><span class="price">£7.50</span></a>
+            <a class="item" href="#z-chicken-nuggets" data-name="Chicken Nuggets" data-cat="kids" data-search="chicken nuggets kids' meals"><span class="thumb ph-chicken-nuggets" aria-hidden="true"></span><span class="name">Chicken Nuggets</span><span class="price">£7.50</span></a>
+          </div>
+        </div>
+        <div class="cat-block" id="cat-also" data-cat="also" data-name="Also on the Menu">
+          <h3>Also on the Menu<small>6 items</small></h3>
+          <div class="grid">
+            <a class="item" href="#z-ghoozi" data-name="Ghoozi" data-cat="also" data-search="ghoozi also on the menu"><span class="thumb ph-ghoozi" aria-hidden="true"></span><span class="name">Ghoozi</span><span class="price">£15.00</span></a>
+            <a class="item" href="#z-zereshk-polo-with-chicken" data-name="Zereshk Polo with Chicken" data-cat="also" data-search="zereshk polo with chicken also on the menu"><span class="thumb ph-zereshk-polo-with-chicken" aria-hidden="true"></span><span class="name">Zereshk Polo with Chicken</span><span class="price">£11.00</span></a>
+            <a class="item" href="#z-ghormeh-sabzi" data-name="Ghormeh Sabzi" data-cat="also" data-search="ghormeh sabzi also on the menu"><span class="thumb ph-ghormeh-sabzi" aria-hidden="true"></span><span class="name">Ghormeh Sabzi</span><span class="price">£11.00</span></a>
+            <a class="item" href="#z-fresh-falafel" data-name="Fresh Falafel" data-cat="also" data-search="fresh falafel also on the menu"><span class="thumb ph-fresh-falafel" aria-hidden="true"></span><span class="name">Fresh Falafel</span><span class="price">£7.00</span></a>
+            <a class="item" href="#z-lahmacun" data-name="Lahmacun" data-cat="also" data-search="lahmacun also on the menu"><span class="thumb ph-lahmacun" aria-hidden="true"></span><span class="name">Lahmacun</span><span class="price">£9.00</span></a>
+            <a class="item" href="#z-kumpir-potato" data-name="Kumpir Potato" data-cat="also" data-search="kumpir potato also on the menu"><span class="thumb ph-kumpir-potato" aria-hidden="true"></span><span class="name">Kumpir Potato</span><span class="price">£10.00</span></a>
+          </div>
+        </div>
+        <div class="cat-block" id="cat-drinks" data-cat="drinks" data-name="Drinks">
+          <h3>Drinks<small>8 items</small></h3>
+          <div class="grid">
+            <a class="item" href="#z-coca-cola" data-name="Coca-Cola" data-cat="drinks" data-search="coca-cola drinks"><span class="thumb ph-coca-cola" aria-hidden="true"></span><span class="name">Coca-Cola</span><span class="price">£1.50</span></a>
+            <a class="item" href="#z-coca-cola-zero" data-name="Coca-Cola Zero" data-cat="drinks" data-search="coca-cola zero drinks"><span class="thumb ph-coca-cola-zero" aria-hidden="true"></span><span class="name">Coca-Cola Zero</span><span class="price">£1.50</span></a>
+            <a class="item" href="#z-fanta" data-name="Fanta" data-cat="drinks" data-search="fanta drinks"><span class="thumb ph-fanta" aria-hidden="true"></span><span class="name">Fanta</span><span class="price">£1.50</span></a>
+            <a class="item" href="#z-water" data-name="Water" data-cat="drinks" data-search="water drinks"><span class="thumb ph-water" aria-hidden="true"></span><span class="name">Water</span><span class="price">£1.50</span></a>
+            <a class="item" href="#z-ayran" data-name="Ayran" data-cat="drinks" data-search="ayran drinks"><span class="thumb ph-ayran" aria-hidden="true"></span><span class="name">Ayran</span><span class="price">£1.50</span></a>
+            <a class="item" href="#z-7up" data-name="7UP" data-cat="drinks" data-search="7up drinks"><span class="thumb ph-7up" aria-hidden="true"></span><span class="name">7UP</span><span class="price">£1.50</span></a>
+            <a class="item" href="#z-sprite" data-name="Sprite" data-cat="drinks" data-search="sprite drinks"><span class="thumb ph-sprite" aria-hidden="true"></span><span class="name">Sprite</span><span class="price">£1.50</span></a>
+            <a class="item" href="#z-capri-sun" data-name="Capri-Sun" data-cat="drinks" data-search="capri-sun drinks"><span class="thumb ph-capri-sun" aria-hidden="true"></span><span class="name">Capri-Sun</span><span class="price">£1.00</span></a>
+          </div>
+        </div>
+        <div class="cat-block" id="cat-sauces" data-cat="sauces" data-name="Sauces">
+          <h3>Sauces<small>2 items</small></h3>
+          <div class="grid">
+            <a class="item" href="#z-garlic-sauce" data-name="Garlic Sauce" data-cat="sauces" data-search="garlic sauce sauces"><span class="thumb ph-garlic-sauce" aria-hidden="true"></span><span class="name">Garlic Sauce</span><span class="price">£0.00</span></a>
+            <a class="item" href="#z-chilli-sauce" data-name="Chilli Sauce" data-cat="sauces" data-search="chilli sauce sauces"><span class="thumb ph-chilli-sauce" aria-hidden="true"></span><span class="name">Chilli Sauce</span><span class="price">£0.00</span></a>
+          </div>
+        </div>
+      </div>
+      <p class="empty" id="emptyMsg" role="status">No dishes match your search. Try another word.</p>
+
+      <div class="notice">
+        <strong>Allergy notice:</strong> Please tell a member of our team about any food allergies or dietary requirements before ordering. While we take every precaution, we cannot guarantee a completely allergen-free environment due to the risk of cross-contamination in our kitchen.
+      </div>
+      <p class="notice" style="margin-top:12px">Kebabs are served with naan or rice. Kabuli Pulao is served as listed.</p>
+
+      <div class="menu-actions">
+        <button class="btn btn-outline" id="openMenu">🖼 View printed menu</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAMILY PLATTER -->
+  <section id="platter" style="background: var(--cream)">
+    <div class="wrap platter">
+      <div class="reveal">
+        <img src="images/family-platter.jpg" alt="Chef Choice Family Platter with kebabs, ribs, wings, chips and naan" loading="lazy" width="600" height="555">
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">Chef's Special</p>
+        <h2>Chef Choice Family Platter</h2>
+        <p><strong>Serves 2 people and up.</strong></p>
+        <p class="price-big">£25.00+</p>
+        <ul>
+          <li>Assorted charcoal grilled kebabs</li>
+          <li>Chicken and barbecue ribs</li>
+          <li>Golden chips and fresh naan</li>
+          <li>Served with rice</li>
+        </ul>
+        <a class="btn btn-primary" href="tel:+441183531999">📞 Call to ask about the platter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit">
+    <div class="wrap">
+      <div class="reveal" style="text-align:center; margin-bottom: 26px;">
+        <p class="eyebrow">Find Us</p>
+        <h2>Come and Visit</h2>
+      </div>
+      <div class="visit-grid">
+        <div class="card reveal">
+          <h3>📍 Address</h3>
+          <p>531 Oxford Road<br>Reading, RG30 1HJ<br>United Kingdom</p>
+          <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=531+Oxford+Road+Reading+RG30+1HJ" target="_blank" rel="noopener">Get directions</a>
+        </div>
+        <div class="card reveal">
+          <h3>📞 Call Us</h3>
+          <ul class="phone-list">
+            <li><a href="tel:+441183531999">0118 353 1999</a></li>
+            <li><a href="tel:+447551559009">0755 155 9009</a></li>
+          </ul>
+          <p class="allergy">Please mention any allergies when you call or visit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Sizzling Kebabs Restaurant</strong> · 531 Oxford Road, Reading RG30 1HJ</p>
+    <p><a href="tel:+441183531999">0118 353 1999</a> · <a href="tel:+447551559009">0755 155 9009</a></p>
+    <p>© <span id="year"></span> Sizzling Kebabs Restaurant. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Lightbox for the printed menu -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Printed menu">
+  <button id="closeLb" aria-label="Close">×</button>
+  <img src="images/full-menu.jpg" alt="Printed menu of Sizzling Kebabs Restaurant with kebabs, side orders, burgers, kids' meals, drinks and sauces">
+</div>
+
+<div class="zoom" id="z-koobideh-kebab" role="dialog" aria-modal="true" aria-label="Koobideh Kebab">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-koobideh-kebab" role="img" aria-label="Koobideh Kebab"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Koobideh Kebab</h3>
+        <p class="dish-price">£12.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Koobideh Kebab" data-price="12.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-chilli-sauce" rel="prev">‹ Previous</a>
+        <span class="zoom-count">1 of 58</span>
+        <a class="zoom-step" href="#z-chicken-shish" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-chicken-shish" role="dialog" aria-modal="true" aria-label="Chicken Shish">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-chicken-shish" role="img" aria-label="Chicken Shish"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Chicken Shish</h3>
+        <p class="dish-price">£12.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Chicken Shish" data-price="12.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-koobideh-kebab" rel="prev">‹ Previous</a>
+        <span class="zoom-count">2 of 58</span>
+        <a class="zoom-step" href="#z-lamb-shish" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-lamb-shish" role="dialog" aria-modal="true" aria-label="Lamb Shish">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-lamb-shish" role="img" aria-label="Lamb Shish"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Lamb Shish</h3>
+        <p class="dish-price">£15.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Lamb Shish" data-price="15.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-chicken-shish" rel="prev">‹ Previous</a>
+        <span class="zoom-count">3 of 58</span>
+        <a class="zoom-step" href="#z-double-shish" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-double-shish" role="dialog" aria-modal="true" aria-label="Double Shish">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-double-shish" role="img" aria-label="Double Shish"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Double Shish</h3>
+        <p class="dish-price">£13.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Double Shish" data-price="13.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-lamb-shish" rel="prev">‹ Previous</a>
+        <span class="zoom-count">4 of 58</span>
+        <a class="zoom-step" href="#z-special-kebab" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-special-kebab" role="dialog" aria-modal="true" aria-label="Special Kebab">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-special-kebab" role="img" aria-label="Special Kebab"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Special Kebab</h3>
+        <p class="dish-price">£19.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Special Kebab" data-price="19.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-double-shish" rel="prev">‹ Previous</a>
+        <span class="zoom-count">5 of 58</span>
+        <a class="zoom-step" href="#z-barg-kebab" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-barg-kebab" role="dialog" aria-modal="true" aria-label="Barg Kebab">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-barg-kebab" role="img" aria-label="Barg Kebab"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Barg Kebab</h3>
+        <p class="dish-price">£16.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Barg Kebab" data-price="16.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-special-kebab" rel="prev">‹ Previous</a>
+        <span class="zoom-count">6 of 58</span>
+        <a class="zoom-step" href="#z-soltani-kebab" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-soltani-kebab" role="dialog" aria-modal="true" aria-label="Soltani Kebab">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-soltani-kebab" role="img" aria-label="Soltani Kebab"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Soltani Kebab</h3>
+        <p class="dish-price">£16.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Soltani Kebab" data-price="16.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-barg-kebab" rel="prev">‹ Previous</a>
+        <span class="zoom-count">7 of 58</span>
+        <a class="zoom-step" href="#z-barbecue-ribs" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-barbecue-ribs" role="dialog" aria-modal="true" aria-label="Barbecue Ribs">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-barbecue-ribs" role="img" aria-label="Barbecue Ribs"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Barbecue Ribs</h3>
+        <p class="dish-price">£19.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Barbecue Ribs" data-price="19.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-soltani-kebab" rel="prev">‹ Previous</a>
+        <span class="zoom-count">8 of 58</span>
+        <a class="zoom-step" href="#z-chicken-wings" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-chicken-wings" role="dialog" aria-modal="true" aria-label="Chicken Wings">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-chicken-wings" role="img" aria-label="Chicken Wings"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Chicken Wings</h3>
+        <p class="dish-price">£9.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Chicken Wings" data-price="9.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-barbecue-ribs" rel="prev">‹ Previous</a>
+        <span class="zoom-count">9 of 58</span>
+        <a class="zoom-step" href="#z-charcoal-chicken" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-charcoal-chicken" role="dialog" aria-modal="true" aria-label="Charcoal Chicken">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-charcoal-chicken" role="img" aria-label="Charcoal Chicken"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Charcoal Chicken</h3>
+        <p class="dish-price">£12.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Charcoal Chicken" data-price="12.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-chicken-wings" rel="prev">‹ Previous</a>
+        <span class="zoom-count">10 of 58</span>
+        <a class="zoom-step" href="#z-whole-chicken-kebab" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-whole-chicken-kebab" role="dialog" aria-modal="true" aria-label="Whole Chicken Kebab">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-whole-chicken-kebab" role="img" aria-label="Whole Chicken Kebab"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Whole Chicken Kebab</h3>
+        <p class="dish-price">£11.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Whole Chicken Kebab" data-price="11.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-charcoal-chicken" rel="prev">‹ Previous</a>
+        <span class="zoom-count">11 of 58</span>
+        <a class="zoom-step" href="#z-lamb-doner" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-lamb-doner" role="dialog" aria-modal="true" aria-label="Lamb Doner">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-lamb-doner" role="img" aria-label="Lamb Doner"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Lamb Doner</h3>
+        <p class="dish-price">£9.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Lamb Doner" data-price="9.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-whole-chicken-kebab" rel="prev">‹ Previous</a>
+        <span class="zoom-count">12 of 58</span>
+        <a class="zoom-step" href="#z-chicken-doner" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-chicken-doner" role="dialog" aria-modal="true" aria-label="Chicken Doner">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-chicken-doner" role="img" aria-label="Chicken Doner"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Chicken Doner</h3>
+        <p class="dish-price">£8.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Chicken Doner" data-price="8.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-lamb-doner" rel="prev">‹ Previous</a>
+        <span class="zoom-count">13 of 58</span>
+        <a class="zoom-step" href="#z-mixed-doner" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-mixed-doner" role="dialog" aria-modal="true" aria-label="Mixed Doner">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-mixed-doner" role="img" aria-label="Mixed Doner"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Mixed Doner</h3>
+        <p class="dish-price">£9.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Mixed Doner" data-price="9.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-chicken-doner" rel="prev">‹ Previous</a>
+        <span class="zoom-count">14 of 58</span>
+        <a class="zoom-step" href="#z-sea-bass" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-sea-bass" role="dialog" aria-modal="true" aria-label="Sea Bass">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-sea-bass" role="img" aria-label="Sea Bass"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Sea Bass</h3>
+        <p class="dish-price">£14.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Sea Bass" data-price="14.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-mixed-doner" rel="prev">‹ Previous</a>
+        <span class="zoom-count">15 of 58</span>
+        <a class="zoom-step" href="#z-salmon" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-salmon" role="dialog" aria-modal="true" aria-label="Salmon">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-salmon" role="img" aria-label="Salmon"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Salmon</h3>
+        <p class="dish-price">£15.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Salmon" data-price="15.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-sea-bass" rel="prev">‹ Previous</a>
+        <span class="zoom-count">16 of 58</span>
+        <a class="zoom-step" href="#z-sea-bream" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-sea-bream" role="dialog" aria-modal="true" aria-label="Sea Bream">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-sea-bream" role="img" aria-label="Sea Bream"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Sea Bream</h3>
+        <p class="dish-price">£14.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Sea Bream" data-price="14.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-salmon" rel="prev">‹ Previous</a>
+        <span class="zoom-count">17 of 58</span>
+        <a class="zoom-step" href="#z-prawns" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-prawns" role="dialog" aria-modal="true" aria-label="Prawns">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-prawns" role="img" aria-label="Prawns"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Prawns</h3>
+        <p class="dish-price">£14.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Prawns" data-price="14.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-sea-bream" rel="prev">‹ Previous</a>
+        <span class="zoom-count">18 of 58</span>
+        <a class="zoom-step" href="#z-tashreeb" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-tashreeb" role="dialog" aria-modal="true" aria-label="Tashreeb">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-tashreeb" role="img" aria-label="Tashreeb"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Tashreeb</h3>
+        <p class="dish-price">£14.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Tashreeb" data-price="14.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-prawns" rel="prev">‹ Previous</a>
+        <span class="zoom-count">19 of 58</span>
+        <a class="zoom-step" href="#z-kabuli-pulao" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-kabuli-pulao" role="dialog" aria-modal="true" aria-label="Kabuli Pulao">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-kabuli-pulao" role="img" aria-label="Kabuli Pulao"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kebabs</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Kabuli Pulao</h3>
+        <p class="dish-price">£13.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Kabuli Pulao" data-price="13.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-tashreeb" rel="prev">‹ Previous</a>
+        <span class="zoom-count">20 of 58</span>
+        <a class="zoom-step" href="#z-fries" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-fries" role="dialog" aria-modal="true" aria-label="Fries">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-fries" role="img" aria-label="Fries"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Side Orders</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Fries</h3>
+        <p class="dish-price">£2.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Fries" data-price="2.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-kabuli-pulao" rel="prev">‹ Previous</a>
+        <span class="zoom-count">21 of 58</span>
+        <a class="zoom-step" href="#z-tacco-chips" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-tacco-chips" role="dialog" aria-modal="true" aria-label="Tacco Chips">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-tacco-chips" role="img" aria-label="Tacco Chips"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Side Orders</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Tacco Chips</h3>
+        <p class="dish-price">£4.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Tacco Chips" data-price="4.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-fries" rel="prev">‹ Previous</a>
+        <span class="zoom-count">22 of 58</span>
+        <a class="zoom-step" href="#z-taco-cheese-chips" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-taco-cheese-chips" role="dialog" aria-modal="true" aria-label="Taco Cheese Chips">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-taco-cheese-chips" role="img" aria-label="Taco Cheese Chips"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Side Orders</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Taco Cheese Chips</h3>
+        <p class="dish-price">£5.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Taco Cheese Chips" data-price="5.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-tacco-chips" rel="prev">‹ Previous</a>
+        <span class="zoom-count">23 of 58</span>
+        <a class="zoom-step" href="#z-cheese-chips" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-cheese-chips" role="dialog" aria-modal="true" aria-label="Cheese Chips">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-cheese-chips" role="img" aria-label="Cheese Chips"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Side Orders</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Cheese Chips</h3>
+        <p class="dish-price">£4.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Cheese Chips" data-price="4.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-taco-cheese-chips" rel="prev">‹ Previous</a>
+        <span class="zoom-count">24 of 58</span>
+        <a class="zoom-step" href="#z-garlic-cheese-chips" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-garlic-cheese-chips" role="dialog" aria-modal="true" aria-label="Garlic Cheese Chips">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-garlic-cheese-chips" role="img" aria-label="Garlic Cheese Chips"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Side Orders</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Garlic Cheese Chips</h3>
+        <p class="dish-price">£5.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Garlic Cheese Chips" data-price="5.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-cheese-chips" rel="prev">‹ Previous</a>
+        <span class="zoom-count">25 of 58</span>
+        <a class="zoom-step" href="#z-curry-chips" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-curry-chips" role="dialog" aria-modal="true" aria-label="Curry Chips">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-curry-chips" role="img" aria-label="Curry Chips"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Side Orders</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Curry Chips</h3>
+        <p class="dish-price">£3.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Curry Chips" data-price="3.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-garlic-cheese-chips" rel="prev">‹ Previous</a>
+        <span class="zoom-count">26 of 58</span>
+        <a class="zoom-step" href="#z-curry-cheese-chips" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-curry-cheese-chips" role="dialog" aria-modal="true" aria-label="Curry Cheese Chips">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-curry-cheese-chips" role="img" aria-label="Curry Cheese Chips"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Side Orders</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Curry Cheese Chips</h3>
+        <p class="dish-price">£3.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Curry Cheese Chips" data-price="3.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-curry-chips" rel="prev">‹ Previous</a>
+        <span class="zoom-count">27 of 58</span>
+        <a class="zoom-step" href="#z-halloumi-cheese-salad" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-halloumi-cheese-salad" role="dialog" aria-modal="true" aria-label="Halloumi Cheese Salad">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-halloumi-cheese-salad" role="img" aria-label="Halloumi Cheese Salad"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Side Orders</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Halloumi Cheese Salad</h3>
+        <p class="dish-price">£6.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Halloumi Cheese Salad" data-price="6.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-curry-cheese-chips" rel="prev">‹ Previous</a>
+        <span class="zoom-count">28 of 58</span>
+        <a class="zoom-step" href="#z-hummus" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-hummus" role="dialog" aria-modal="true" aria-label="Hummus">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-hummus" role="img" aria-label="Hummus"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Side Orders</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Hummus</h3>
+        <p class="dish-price">£2.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Hummus" data-price="2.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-halloumi-cheese-salad" rel="prev">‹ Previous</a>
+        <span class="zoom-count">29 of 58</span>
+        <a class="zoom-step" href="#z-tzatziki" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-tzatziki" role="dialog" aria-modal="true" aria-label="Tzatziki">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-tzatziki" role="img" aria-label="Tzatziki"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Side Orders</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Tzatziki</h3>
+        <p class="dish-price">£2.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Tzatziki" data-price="2.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-hummus" rel="prev">‹ Previous</a>
+        <span class="zoom-count">30 of 58</span>
+        <a class="zoom-step" href="#z-shirazi-salad" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-shirazi-salad" role="dialog" aria-modal="true" aria-label="Shirazi Salad">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-shirazi-salad" role="img" aria-label="Shirazi Salad"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Side Orders</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Shirazi Salad</h3>
+        <p class="dish-price">£2.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Shirazi Salad" data-price="2.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-tzatziki" rel="prev">‹ Previous</a>
+        <span class="zoom-count">31 of 58</span>
+        <a class="zoom-step" href="#z-mousir" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-mousir" role="dialog" aria-modal="true" aria-label="Mousir">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-mousir" role="img" aria-label="Mousir"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Side Orders</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Mousir</h3>
+        <p class="dish-price">£2.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Mousir" data-price="2.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-shirazi-salad" rel="prev">‹ Previous</a>
+        <span class="zoom-count">32 of 58</span>
+        <a class="zoom-step" href="#z-single-beef-burger" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-single-beef-burger" role="dialog" aria-modal="true" aria-label="Single Beef Burger">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-single-beef-burger" role="img" aria-label="Single Beef Burger"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Burgers</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Single Beef Burger</h3>
+        <p class="dish-price">£4.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Single Beef Burger" data-price="4.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-mousir" rel="prev">‹ Previous</a>
+        <span class="zoom-count">33 of 58</span>
+        <a class="zoom-step" href="#z-double-beef-burger" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-double-beef-burger" role="dialog" aria-modal="true" aria-label="Double Beef Burger">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-double-beef-burger" role="img" aria-label="Double Beef Burger"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Burgers</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Double Beef Burger</h3>
+        <p class="dish-price">£6.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Double Beef Burger" data-price="6.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-single-beef-burger" rel="prev">‹ Previous</a>
+        <span class="zoom-count">34 of 58</span>
+        <a class="zoom-step" href="#z-special-beef-burger" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-special-beef-burger" role="dialog" aria-modal="true" aria-label="Special Beef Burger">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-special-beef-burger" role="img" aria-label="Special Beef Burger"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Burgers</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Special Beef Burger</h3>
+        <p class="dish-price">£8.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Special Beef Burger" data-price="8.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-double-beef-burger" rel="prev">‹ Previous</a>
+        <span class="zoom-count">35 of 58</span>
+        <a class="zoom-step" href="#z-chicken-fillet-burger" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-chicken-fillet-burger" role="dialog" aria-modal="true" aria-label="Chicken Fillet Burger">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-chicken-fillet-burger" role="img" aria-label="Chicken Fillet Burger"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Burgers</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Chicken Fillet Burger</h3>
+        <p class="dish-price">£4.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Chicken Fillet Burger" data-price="4.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-special-beef-burger" rel="prev">‹ Previous</a>
+        <span class="zoom-count">36 of 58</span>
+        <a class="zoom-step" href="#z-fish-burger" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-fish-burger" role="dialog" aria-modal="true" aria-label="Fish Burger">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-fish-burger" role="img" aria-label="Fish Burger"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Burgers</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Fish Burger</h3>
+        <p class="dish-price">£4.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Fish Burger" data-price="4.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-chicken-fillet-burger" rel="prev">‹ Previous</a>
+        <span class="zoom-count">37 of 58</span>
+        <a class="zoom-step" href="#z-chicken-doner-burger" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-chicken-doner-burger" role="dialog" aria-modal="true" aria-label="Chicken Doner Burger">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-chicken-doner-burger" role="img" aria-label="Chicken Doner Burger"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kids' Meals</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Chicken Doner Burger</h3>
+        <p class="dish-price">£7.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Chicken Doner Burger" data-price="7.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-fish-burger" rel="prev">‹ Previous</a>
+        <span class="zoom-count">38 of 58</span>
+        <a class="zoom-step" href="#z-lamb-doner-burger" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-lamb-doner-burger" role="dialog" aria-modal="true" aria-label="Lamb Doner Burger">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-lamb-doner-burger" role="img" aria-label="Lamb Doner Burger"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kids' Meals</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Lamb Doner Burger</h3>
+        <p class="dish-price">£8.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Lamb Doner Burger" data-price="8.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-chicken-doner-burger" rel="prev">‹ Previous</a>
+        <span class="zoom-count">39 of 58</span>
+        <a class="zoom-step" href="#z-mixed-doner-burger" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-mixed-doner-burger" role="dialog" aria-modal="true" aria-label="Mixed Doner Burger">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-mixed-doner-burger" role="img" aria-label="Mixed Doner Burger"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kids' Meals</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Mixed Doner Burger</h3>
+        <p class="dish-price">£8.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Mixed Doner Burger" data-price="8.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-lamb-doner-burger" rel="prev">‹ Previous</a>
+        <span class="zoom-count">40 of 58</span>
+        <a class="zoom-step" href="#z-chicken-tenders" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-chicken-tenders" role="dialog" aria-modal="true" aria-label="Chicken Tenders">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-chicken-tenders" role="img" aria-label="Chicken Tenders"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kids' Meals</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Chicken Tenders</h3>
+        <p class="dish-price">£7.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Chicken Tenders" data-price="7.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-mixed-doner-burger" rel="prev">‹ Previous</a>
+        <span class="zoom-count">41 of 58</span>
+        <a class="zoom-step" href="#z-chicken-nuggets" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-chicken-nuggets" role="dialog" aria-modal="true" aria-label="Chicken Nuggets">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-chicken-nuggets" role="img" aria-label="Chicken Nuggets"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Kids' Meals</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Chicken Nuggets</h3>
+        <p class="dish-price">£7.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Chicken Nuggets" data-price="7.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-chicken-tenders" rel="prev">‹ Previous</a>
+        <span class="zoom-count">42 of 58</span>
+        <a class="zoom-step" href="#z-ghoozi" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-ghoozi" role="dialog" aria-modal="true" aria-label="Ghoozi">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-ghoozi" role="img" aria-label="Ghoozi"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Also on the Menu</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Ghoozi</h3>
+        <p class="dish-price">£15.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Ghoozi" data-price="15.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-chicken-nuggets" rel="prev">‹ Previous</a>
+        <span class="zoom-count">43 of 58</span>
+        <a class="zoom-step" href="#z-zereshk-polo-with-chicken" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-zereshk-polo-with-chicken" role="dialog" aria-modal="true" aria-label="Zereshk Polo with Chicken">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-zereshk-polo-with-chicken" role="img" aria-label="Zereshk Polo with Chicken"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Also on the Menu</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Zereshk Polo with Chicken</h3>
+        <p class="dish-price">£11.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Zereshk Polo with Chicken" data-price="11.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-ghoozi" rel="prev">‹ Previous</a>
+        <span class="zoom-count">44 of 58</span>
+        <a class="zoom-step" href="#z-ghormeh-sabzi" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-ghormeh-sabzi" role="dialog" aria-modal="true" aria-label="Ghormeh Sabzi">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-ghormeh-sabzi" role="img" aria-label="Ghormeh Sabzi"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Also on the Menu</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Ghormeh Sabzi</h3>
+        <p class="dish-price">£11.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Ghormeh Sabzi" data-price="11.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-zereshk-polo-with-chicken" rel="prev">‹ Previous</a>
+        <span class="zoom-count">45 of 58</span>
+        <a class="zoom-step" href="#z-fresh-falafel" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-fresh-falafel" role="dialog" aria-modal="true" aria-label="Fresh Falafel">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-fresh-falafel" role="img" aria-label="Fresh Falafel"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Also on the Menu</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Fresh Falafel</h3>
+        <p class="dish-price">£7.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Fresh Falafel" data-price="7.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-ghormeh-sabzi" rel="prev">‹ Previous</a>
+        <span class="zoom-count">46 of 58</span>
+        <a class="zoom-step" href="#z-lahmacun" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-lahmacun" role="dialog" aria-modal="true" aria-label="Lahmacun">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-lahmacun" role="img" aria-label="Lahmacun"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Also on the Menu</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Lahmacun</h3>
+        <p class="dish-price">£9.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Lahmacun" data-price="9.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-fresh-falafel" rel="prev">‹ Previous</a>
+        <span class="zoom-count">47 of 58</span>
+        <a class="zoom-step" href="#z-kumpir-potato" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-kumpir-potato" role="dialog" aria-modal="true" aria-label="Kumpir Potato">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-kumpir-potato" role="img" aria-label="Kumpir Potato"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Also on the Menu</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Kumpir Potato</h3>
+        <p class="dish-price">£10.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Kumpir Potato" data-price="10.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-lahmacun" rel="prev">‹ Previous</a>
+        <span class="zoom-count">48 of 58</span>
+        <a class="zoom-step" href="#z-coca-cola" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-coca-cola" role="dialog" aria-modal="true" aria-label="Coca-Cola">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-coca-cola" role="img" aria-label="Coca-Cola"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Drinks</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Coca-Cola</h3>
+        <p class="dish-price">£1.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Coca-Cola" data-price="1.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-kumpir-potato" rel="prev">‹ Previous</a>
+        <span class="zoom-count">49 of 58</span>
+        <a class="zoom-step" href="#z-coca-cola-zero" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-coca-cola-zero" role="dialog" aria-modal="true" aria-label="Coca-Cola Zero">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-coca-cola-zero" role="img" aria-label="Coca-Cola Zero"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Drinks</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Coca-Cola Zero</h3>
+        <p class="dish-price">£1.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Coca-Cola Zero" data-price="1.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-coca-cola" rel="prev">‹ Previous</a>
+        <span class="zoom-count">50 of 58</span>
+        <a class="zoom-step" href="#z-fanta" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-fanta" role="dialog" aria-modal="true" aria-label="Fanta">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-fanta" role="img" aria-label="Fanta"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Drinks</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Fanta</h3>
+        <p class="dish-price">£1.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Fanta" data-price="1.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-coca-cola-zero" rel="prev">‹ Previous</a>
+        <span class="zoom-count">51 of 58</span>
+        <a class="zoom-step" href="#z-water" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-water" role="dialog" aria-modal="true" aria-label="Water">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-water" role="img" aria-label="Water"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Drinks</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Water</h3>
+        <p class="dish-price">£1.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Water" data-price="1.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-fanta" rel="prev">‹ Previous</a>
+        <span class="zoom-count">52 of 58</span>
+        <a class="zoom-step" href="#z-ayran" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-ayran" role="dialog" aria-modal="true" aria-label="Ayran">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-ayran" role="img" aria-label="Ayran"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Drinks</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Ayran</h3>
+        <p class="dish-price">£1.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Ayran" data-price="1.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-water" rel="prev">‹ Previous</a>
+        <span class="zoom-count">53 of 58</span>
+        <a class="zoom-step" href="#z-7up" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-7up" role="dialog" aria-modal="true" aria-label="7UP">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-7up" role="img" aria-label="7UP"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Drinks</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">7UP</h3>
+        <p class="dish-price">£1.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="7UP" data-price="1.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-ayran" rel="prev">‹ Previous</a>
+        <span class="zoom-count">54 of 58</span>
+        <a class="zoom-step" href="#z-sprite" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-sprite" role="dialog" aria-modal="true" aria-label="Sprite">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-sprite" role="img" aria-label="Sprite"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Drinks</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Sprite</h3>
+        <p class="dish-price">£1.50</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Sprite" data-price="1.50">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-7up" rel="prev">‹ Previous</a>
+        <span class="zoom-count">55 of 58</span>
+        <a class="zoom-step" href="#z-capri-sun" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-capri-sun" role="dialog" aria-modal="true" aria-label="Capri-Sun">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-capri-sun" role="img" aria-label="Capri-Sun"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Drinks</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Capri-Sun</h3>
+        <p class="dish-price">£1.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Capri-Sun" data-price="1.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-sprite" rel="prev">‹ Previous</a>
+        <span class="zoom-count">56 of 58</span>
+        <a class="zoom-step" href="#z-garlic-sauce" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-garlic-sauce" role="dialog" aria-modal="true" aria-label="Garlic Sauce">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-garlic-sauce" role="img" aria-label="Garlic Sauce"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Sauces</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Garlic Sauce</h3>
+        <p class="dish-price">£0.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Garlic Sauce" data-price="0.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-capri-sun" rel="prev">‹ Previous</a>
+        <span class="zoom-count">57 of 58</span>
+        <a class="zoom-step" href="#z-chilli-sauce" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+  <div class="zoom" id="z-chilli-sauce" role="dialog" aria-modal="true" aria-label="Chilli Sauce">
+    <div class="zoom-card">
+      <div class="zoom-bar"><a class="btn btn-outline zoom-back" href="#menu">← Back to menu</a></div>
+      <div class="zoom-photo ph-chilli-sauce" role="img" aria-label="Chilli Sauce"></div>
+      <div class="dish-info">
+        <p class="dish-cat">Sauces</p>
+        <div class="dish-divider" aria-hidden="true"></div>
+        <h3 class="dish-name">Chilli Sauce</h3>
+        <p class="dish-price">£0.00</p>
+      </div>
+      <div class="zoom-add"><button type="button" class="btn-add" data-add="Chilli Sauce" data-price="0.00">Add to order</button></div>
+      <nav class="zoom-nav" aria-label="Other dishes">
+        <a class="zoom-step" href="#z-garlic-sauce" rel="prev">‹ Previous</a>
+        <span class="zoom-count">58 of 58</span>
+        <a class="zoom-step" href="#z-koobideh-kebab" rel="next">Next ›</a>
+      </nav>
+    </div>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+<div class="cat-toast" id="catToast" role="status" aria-live="polite" aria-atomic="true">
+    <p class="cat-toast-kicker">Now showing</p>
+    <div class="cat-toast-rule" aria-hidden="true"></div>
+    <p class="cat-toast-name"></p>
+    <p class="cat-toast-count"></p>
+  </div>
+
+  <button class="order-bar" id="orderBar" type="button" hidden>
+  <span id="orderCount">0 items</span>
+  <span>View order</span>
+  <span class="order-bar-total" id="orderBarTotal">£0.00</span>
+</button>
+
+<div class="order-panel" id="orderPanel" hidden>
+  <div class="order-card" role="dialog" aria-modal="true" aria-labelledby="orderTitle">
+    <div class="order-head">
+      <h3 id="orderTitle">Your order</h3>
+      <button class="order-close" id="orderClose" type="button" aria-label="Close order">×</button>
+    </div>
+    <ul class="order-lines" id="orderLines"></ul>
+    <p class="order-empty" id="orderEmpty">Your order is empty. Open a dish and tap Add to order.</p>
+    <div class="order-type" role="radiogroup" aria-label="Pick up or delivery">
+      <label><input type="radio" name="ordertype" value="pickup" checked><span>Pick up</span></label>
+      <label><input type="radio" name="ordertype" value="delivery"><span>Delivery</span></label>
+    </div>
+    <form class="order-form" id="orderForm" novalidate>
+      <label>Name<input name="name" autocomplete="name"></label>
+      <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+      <div id="deliveryFields" hidden>
+        <label>Address<input name="address" autocomplete="street-address"></label>
+        <label>Postcode<input name="postcode" autocomplete="postal-code"></label>
+      </div>
+      <label>Notes (allergies, extra sauce)<textarea name="notes" rows="2"></textarea></label>
+    </form>
+    <div class="order-totals">
+      <div><span>Subtotal</span><span id="orderSubtotal">£0.00</span></div>
+      <div><span>Delivery</span><span>Confirmed when we reply</span></div>
+    </div>
+    <p class="order-error" id="orderError" role="alert" hidden></p>
+    <button class="btn btn-primary order-send" id="orderPay" type="button">Pay by card</button>
+    <button class="btn btn-outline order-send" id="orderSend" type="button">Send order on WhatsApp instead</button>
+    <p class="order-fine">Pay by card now, or pay when you collect or on delivery. Prefer to call? <a href="tel:+441183531999">0118 353 1999</a></p>
+  </div>
+</div>
+<a class="to-top" id="toTop" href="#top" aria-label="Back to top">↑</a>
+
+<script>
+  // ---- Menu filters: the menu is already in the page, so it shows even before this runs ----
+  const state = { cat: "all", q: "" };
+  const chipsEl = document.getElementById("chips");
+  const emptyEl = document.getElementById("emptyMsg");
+  const blocks = Array.from(document.querySelectorAll(".cat-block"));
+
+  function applyFilters() {
+    let shown = 0;
+    blocks.forEach(block => {
+      const inCat = state.cat === "all" || block.dataset.cat === state.cat;
+      let count = 0;
+      block.querySelectorAll(".item").forEach(item => {
+        item.hidden = !inCat;
+        if (inCat) count++;
+      });
+      block.hidden = count === 0;
+      shown += count;
+    });
+    emptyEl.hidden = shown > 0;
+  }
+
+  // ---- Category panel ----
+  const toastEl = document.getElementById("catToast");
+  let toastTimer;
+  function showToast(name, count) {
+    toastEl.querySelector(".cat-toast-name").textContent = name;
+    toastEl.querySelector(".cat-toast-count").textContent = count + (count === 1 ? " dish" : " dishes");
+    toastEl.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toastEl.classList.remove("show"), 1500);
+  }
+
+  chipsEl.addEventListener("click", e => {
+    const btn = e.target.closest(".chip");
+    if (!btn) return;
+    e.preventDefault();
+    state.cat = btn.dataset.cat;
+    chipsEl.querySelectorAll(".chip").forEach(c => c.setAttribute("aria-pressed", String(c === btn)));
+    applyFilters();
+    showToast(btn.textContent.trim(), document.querySelectorAll(".item:not([hidden])").length);
+  });
+
+  // ---- Swipe between dishes in the enlarged view (the Previous and Next buttons work without this) ----
+  let touchX = null, touchY = null;
+  function stepDish(direction) {
+    if (!location.hash.startsWith("#z-")) return;
+    const step = document.querySelector(location.hash + " .zoom-step[rel='" + direction + "']");
+    if (step) location.replace(step.getAttribute("href"));
+  }
+  document.addEventListener("touchstart", e => {
+    touchX = e.touches[0].clientX;
+    touchY = e.touches[0].clientY;
+  }, { passive: true });
+  document.addEventListener("touchend", e => {
+    if (touchX === null) return;
+    const dx = e.changedTouches[0].clientX - touchX;
+    const dy = e.changedTouches[0].clientY - touchY;
+    touchX = null;
+    if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy)) return;
+    stepDish(dx < 0 ? "next" : "prev");
+  }, { passive: true });
+  document.addEventListener("keydown", e => {
+    if (e.key === "ArrowLeft") stepDish("prev");
+    if (e.key === "ArrowRight") stepDish("next");
+  });
+  // ---- Order: a basket that sends the order to the restaurant on WhatsApp ----
+  const WHATSAPP_NUMBER = "447551559009";
+  const cart = [];
+  const orderBar = document.getElementById("orderBar");
+  const orderPanel = document.getElementById("orderPanel");
+  const orderForm = document.getElementById("orderForm");
+  const orderLines = document.getElementById("orderLines");
+  const orderError = document.getElementById("orderError");
+  const deliveryFields = document.getElementById("deliveryFields");
+  const money = n => "£" + n.toFixed(2);
+
+  function cartTotal() { return cart.reduce((sum, l) => sum + l.price * l.qty, 0); }
+  function cartCount() { return cart.reduce((sum, l) => sum + l.qty, 0); }
+  function orderType() { return orderForm.parentElement.querySelector("input[name=ordertype]:checked").value; }
+
+  function renderOrder() {
+    const count = cartCount();
+    orderBar.hidden = count === 0;
+    document.getElementById("orderCount").textContent = count + (count === 1 ? " item" : " items");
+    document.getElementById("orderBarTotal").textContent = money(cartTotal());
+    document.getElementById("orderSubtotal").textContent = money(cartTotal());
+    document.getElementById("orderEmpty").hidden = count > 0;
+    orderLines.innerHTML = cart.map((l, i) => `
+      <li class="order-line">
+        <span class="order-line-name">${l.name}</span>
+        <span class="order-line-price">${money(l.price * l.qty)}</span>
+        <div class="order-qty">
+          <button type="button" data-act="dec" data-i="${i}" aria-label="Remove one ${l.name}">−</button>
+          <span>${l.qty}</span>
+          <button type="button" data-act="inc" data-i="${i}" aria-label="Add one ${l.name}">+</button>
+        </div>
+        <button class="order-remove" type="button" data-act="remove" data-i="${i}">Remove</button>
+      </li>`).join("");
+  }
+
+  function addToCart(name, price) {
+    const line = cart.find(l => l.name === name);
+    if (line) line.qty++; else cart.push({ name, price, qty: 1 });
+    renderOrder();
+  }
+
+  document.addEventListener("click", e => {
+    const btn = e.target.closest("[data-add]");
+    if (!btn) return;
+    addToCart(btn.dataset.add, Number(btn.dataset.price));
+    const label = btn.textContent;
+    btn.textContent = "Added to your order";
+    setTimeout(() => { btn.textContent = label; }, 1200);
+  });
+
+  orderLines.addEventListener("click", e => {
+    const btn = e.target.closest("[data-act]");
+    if (!btn) return;
+    const i = Number(btn.dataset.i);
+    const line = cart[i];
+    if (!line) return;
+    if (btn.dataset.act === "inc") line.qty++;
+    if (btn.dataset.act === "dec") line.qty--;
+    if (btn.dataset.act === "remove" || line.qty <= 0) cart.splice(i, 1);
+    renderOrder();
+  });
+
+  document.querySelectorAll("input[name=ordertype]").forEach(r => {
+    r.addEventListener("change", () => { deliveryFields.hidden = orderType() !== "delivery"; });
+  });
+
+  function openOrder() {
+    orderPanel.hidden = false;
+    renderOrder();
+    document.getElementById("orderClose").focus();
+  }
+  function closeOrder() { orderPanel.hidden = true; }
+  orderBar.addEventListener("click", openOrder);
+  document.getElementById("orderClose").addEventListener("click", closeOrder);
+  orderPanel.addEventListener("click", e => { if (e.target === orderPanel) closeOrder(); });
+
+  document.getElementById("orderSend").addEventListener("click", () => {
+    const data = new FormData(orderForm);
+    const name = String(data.get("name") || "").trim();
+    const phone = String(data.get("phone") || "").trim();
+    const address = String(data.get("address") || "").trim();
+    const postcode = String(data.get("postcode") || "").trim();
+    const notes = String(data.get("notes") || "").trim();
+    const type = orderType();
+    let problem = "";
+    if (cart.length === 0) problem = "Add at least one dish first.";
+    else if (!name || !phone) problem = "Please add your name and phone number.";
+    else if (type === "delivery" && (!address || !postcode)) problem = "Please add your address and postcode for delivery.";
+    orderError.textContent = problem;
+    orderError.hidden = !problem;
+    if (problem) return;
+
+    const lines = [type === "delivery" ? "NEW DELIVERY ORDER" : "NEW PICK-UP ORDER", ""];
+    cart.forEach(l => lines.push(l.qty + " x " + l.name + " - " + money(l.price * l.qty)));
+    lines.push("", "Subtotal: " + money(cartTotal()));
+    if (type === "delivery") lines.push("Delivery charge: to be confirmed");
+    lines.push("", "Name: " + name, "Phone: " + phone);
+    if (type === "delivery") lines.push("Address: " + address + ", " + postcode);
+    if (notes) lines.push("Notes: " + notes);
+    const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(lines.join("\n"));
+    if (!window.open(url, "_blank")) location.href = url;
+  });
+  // ---- Pay by card: sends the basket to a secure Stripe Checkout page ----
+  function readOrder() {
+    const data = new FormData(orderForm);
+    const order = {
+      type: orderType(),
+      name: String(data.get("name") || "").trim(),
+      phone: String(data.get("phone") || "").trim(),
+      address: String(data.get("address") || "").trim(),
+      postcode: String(data.get("postcode") || "").trim(),
+      notes: String(data.get("notes") || "").trim(),
+    };
+    let problem = "";
+    if (cart.length === 0) problem = "Add at least one dish first.";
+    else if (!order.name || !order.phone) problem = "Please add your name and phone number.";
+    else if (order.type === "delivery" && (!order.address || !order.postcode)) problem = "Please add your address and postcode for delivery.";
+    orderError.textContent = problem;
+    orderError.hidden = !problem;
+    return problem ? null : order;
+  }
+
+  document.getElementById("orderPay").addEventListener("click", async () => {
+    const order = readOrder();
+    if (!order) return;
+    const payBtn = document.getElementById("orderPay");
+    payBtn.disabled = true;
+    payBtn.textContent = "Opening secure payment...";
+    try {
+      const res = await fetch("/.netlify/functions/checkout", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...order, items: cart.map(l => ({ name: l.name, qty: l.qty })) }),
+      });
+      const data = await res.json();
+      if (!res.ok || !data.url) throw new Error(data.error || "Payment could not start");
+      location.href = data.url;
+    } catch (err) {
+      const reason = err.message === "Failed to fetch" ? "Card payment is not available right now." : err.message;
+      orderError.textContent = reason + " You can still send your order on WhatsApp or call us.";
+      orderError.hidden = false;
+      payBtn.disabled = false;
+      payBtn.textContent = "Pay by card";
+    }
+  });
+
+  // Back from a successful payment
+  if (location.search.indexOf("paid=1") !== -1) {
+    cart.length = 0;
+    renderOrder();
+    toastEl.querySelector(".cat-toast-name").textContent = "Thank you";
+    toastEl.querySelector(".cat-toast-count").textContent = "Your payment was received";
+    toastEl.classList.add("show");
+    setTimeout(() => toastEl.classList.remove("show"), 3500);
+  }
+  // ---- Mobile nav ----
+  const navToggle = document.getElementById("navToggle");
+  const mobileNav = document.getElementById("mobileNav");
+  navToggle.addEventListener("click", () => {
+    const open = mobileNav.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(open));
+    navToggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+  });
+  mobileNav.addEventListener("click", e => {
+    if (e.target.tagName === "A") {
+      mobileNav.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+
+  // ---- Scroll effects (optional: the page works without them) ----
+  if ("IntersectionObserver" in window) {
+    const navLinks = document.querySelectorAll(".nav a");
+    const sections = ["menu", "platter", "about", "visit"].map(id => document.getElementById(id));
+    const spy = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + entry.target.id));
+        }
+      });
+    }, { rootMargin: "-45% 0px -50% 0px" });
+    sections.forEach(s => spy.observe(s));
+
+    const revealIO = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add("in"); revealIO.unobserve(e.target); }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach(el => revealIO.observe(el));
+  }
+  // Safety net: never leave content hidden if the scroll effect doesn't fire
+  setTimeout(() => document.querySelectorAll(".reveal").forEach(el => el.classList.add("in")), 2500);
+
+  // ---- Printed menu viewer ----
+  const lb = document.getElementById("lightbox");
+  const openLb = () => {
+    lb.classList.add("open");
+    document.body.style.overflow = "hidden";
+    document.getElementById("closeLb").focus();
+  };
+  const closeLb = () => {
+    if (!lb.classList.contains("open")) return;
+    lb.classList.remove("open");
+    document.body.style.overflow = "";
+    document.getElementById("openMenu").focus();
+  };
+  document.getElementById("openMenu").addEventListener("click", openLb);
+  document.getElementById("closeLb").addEventListener("click", closeLb);
+  lb.addEventListener("click", e => { if (e.target === lb) closeLb(); });
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") closeLb();
+    if (e.key === "Escape" && !orderPanel.hidden) closeOrder();
+  });
+
+  // ---- Back to top ----
+  const toTop = document.getElementById("toTop");
+
+
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
